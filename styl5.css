@@ -1,0 +1,63 @@
+
+#baner {
+    background-color: #009999;
+    color: white;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+}
+
+#informacje{
+    display: table;
+    width: 100%;
+}
+#content{
+    display: table;
+    width: 100%;
+}
+
+.inf{
+    background-color: #009999;
+    color:white;
+    font-family: Arial;
+    text-align: center;
+    width: 25%;
+    height: 150px;
+    display:table-cell;
+    margin:0px;
+    align-content: center;
+}
+
+#left, #right{
+    display: table-cell;
+    background-color: #669999;
+    width: 30%;
+    height: 600px;
+}
+
+#center{
+    display: table-cell;
+    background-color: #99CCCC;
+    width: 40%;
+    height: 600px;
+    text-align: center;
+}
+
+table, td,th{
+    border: 1px solid green;
+    text-align: center;
+}
+
+footer{
+    background-color: #009999;
+    color:white;
+    width: 100%;
+    text-align: right;
+}
+
+button{
+    border:0;
+    padding: 10px;
+    background-color: green;
+    color:white;
+}

@@ -1,0 +1,19 @@
+body {
+    color: snow;
+    background-color: silver;
+    font-family:comic sans ms;
+}
+
+button {
+    min-block-size: 24px;
+    max-block-size: 50px;
+    background-color: turquoise;
+    border-color: thistle;
+    color: tomato;
+    border-style: ridge;
+    border-radius: 40px
+    
+}
+
+
+

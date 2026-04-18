@@ -1,0 +1,108 @@
+#pas1 {
+     width: 400px;
+     height: 125px;
+     background-color:greenyellow;
+}
+
+#pas2 {
+    width: 400px;
+    height: 125px;
+    background-color:red;
+}
+
+.opis {
+        font-family: Comic sans ms;
+        color: dark green;
+        font-size: 15pt;
+        font-style: italic;
+    }
+
+#container {
+       width: 800px;
+       margin-top: 50px;
+       margin-bottom: 50px;
+       margin-left: auto;
+       margin-right: auto;
+       /*margin: 50px auto; */
+       padding: 20px;
+       border: 2px dotted gray ;
+       background-color: lightskyblue;
+
+}
+
+footer {
+    margin-left: 600px;
+}
+
+header {
+    font-size: 25pt;
+    font-family: Brush Script MT;
+    margin-left: 330px;
+    font-variant:small-caps;
+}
+
+a:active {
+    color: rgb(255, 132, 0);
+}
+
+a:visited {
+    color: gray;
+}
+
+#flaga:hover #pas1{
+    background-color: rgb(72, 27, 253);
+}
+
+#flaga:hover #pas2{
+    background-color: rgb(255, 251, 0);
+}
+
+#flaga + section{
+    color: gold;
+}
+
+section:nth-child(4) {color: goldenrod;}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 30px 0px;
+}
+
+td, th{
+    border: 1px solid black;
+    margin: 0;
+    font-size: 15pt;
+    font-family: comic sans ms;
+    padding: 5px;
+}
+
+tr:nth-child(odd){
+    background-color: lightgreen;
+}
+
+tr:nth-child(even){
+    background-color: lightgoldenrodyellow;
+}
+tr:nth-child(8) {
+    background-color: blueviolet;
+    color: blue;
+}
+tr:nth-child(1) {
+    background-color: aquamarine;
+    color: whitesmoke;
+}
+
+* {
+    font-family: comic sans ms;
+    font-size: 15pt;
+}
+
+#flaga {
+    margin: 30px;
+    margin-left: 200px;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}

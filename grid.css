@@ -1,0 +1,28 @@
+body{
+    background-color: #113;
+}
+*{
+    color: white;
+}
+#container{
+    display: grid;
+    grid-template-columns: 300px auto auto;
+    gap:5px;
+}
+
+#container > div{
+    padding: 30px;
+    text-align: center;
+    margin: 1px;
+}
+
+#container > div:nth-child(1){
+    grid-column: 1 / 4;
+}
+#container > div:nth-child(even) {
+    border:3px solid lightpink;
+}
+
+#container > div:nth-child(odd) {
+    border:3px solid lightskyblue;
+}

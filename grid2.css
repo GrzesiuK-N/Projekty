@@ -1,0 +1,40 @@
+body{
+    background-color: #113;
+}
+*{
+    color: white;
+}
+#container{
+    display: grid;
+    grid-template-columns: 25% 50% auto;
+    grid-template-areas: 
+        "header header header"
+        "nav article oferta"
+        "footer footer footer"; 
+
+    gap:5px;
+}
+
+header,nav,#oferta{
+    text-align: center;
+}
+header,nav,article,#oferta{
+    border: 1px solid salmon;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+article{
+    grid-area: article;
+}
+#oferta{
+    grid-area: oferta;
+}
+
+footer{
+    grid-area: footer;
+}

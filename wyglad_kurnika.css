@@ -1,0 +1,18 @@
+body {
+      font-family: comic sans ms;
+      background-color: oklab(96.357% -0.00959 0.03125);
+      padding: 30px;
+    }
+    input, button {
+      margin: 5px;
+      padding: 8px;
+    }
+    #wynik {
+      margin-top: 20px;
+      border: 2px solid lch(0% 0 0);
+      border-radius: 10px;
+      padding: 10px;
+      background-color: oklch(100% 0.00011 271.152);
+      width: 300px;
+      min-height: 50px;
+    }

@@ -1,0 +1,64 @@
+body {
+    padding: 1px;
+    background-image: url("paper.gif");
+    font-family: comic sans ms;
+    margin: auto;
+    width: 800px;
+}
+
+a {
+    margin: 12px;
+    color: rgb(168, 87, 97);
+}
+
+.menu {
+border: 1px;
+border-style: dashed;
+text-align: center;
+padding: 5px;
+font-size: 18pt;
+
+}
+
+.logo {
+    width: 800px;
+    height: 100px;
+    top: 0px;
+    border: 2px solid rgb(103, 99, 99);
+}
+
+ .metal {
+  width: 256px;
+  border: 2px solid black;
+  float: left;
+  margin-right: 15px;
+ }
+
+div{
+  padding-left:930px;
+}
+
+ul li {
+    color: rgb(168, 87, 97);
+}
+
+.link {
+    color: red;
+    font-size: 20pt;
+    padding: 40px;
+    text-align: center;
+    display: block;
+}
+
+
+img #metal {
+    margin-right: 30px;
+    border: 2px solid gray;
+    text-align: left;
+}
+
+h2 {
+    background-color: black;
+    color: gold;
+    text-align: center;
+}

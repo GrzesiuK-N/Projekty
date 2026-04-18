@@ -1,0 +1,59 @@
+#zdjecie {
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+
+body {
+    background-color: slategray;
+}
+
+div {
+    width: 800px;
+    font-size: 20pt;
+    font-family: comic sans ms;
+    background-color: whitesmoke;
+    padding: 30px; /*padding wewnętrzny*/
+    margin: 120px auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    /*
+    height: 500px;
+    overflow-y: scroll;
+    */
+}
+
+nav {
+    width: 800px;
+    font-size: 18pt;
+    border: 2px dashed grey;
+    background-color: silver;
+    margin: auto;
+    padding: 30px;
+}
+
+section {
+    position: fixed;
+    top: 0px;
+    left: 0px; /*lub width:100%px lub left;328px; */
+    width: 100%;
+
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration:none;
+    background-color: slategrey;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    padding: 5px;
+}
+
+#logo {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+

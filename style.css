@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(144, 238, 144); /* kolor tla*/
+    margin: 50px;
+    font-size: 16pt;
+    font-family: comic sans ms;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 30pt;          /* rozmiar czcionki*/
+    font-family: 'comic sans ms'; /* rodzaje czcionki*/
+   text-align: center;
+}
+
+a {
+    color: blueviolet
+}
+a:link{               /* link nieodwiedzony*/
+    color: lightgreen;
+}
+a:visited{            /*link odwiedzony*/
+    color: rgb(255, 255, 255);
+}
+a:hover{              /*po nacisnieciu myszki*/
+    color: yellow;
+
+}
+a:active{             /*aktywny, w trakcie klikniecia*/
+    color: blue;
+}
+
+/* font-variant: small-caps; - wariant czcionki:kapitaliki*/
+div{
+    width: 600px;
+    font-size: 20pt;
+    background-color: lightyellow;
+    border: 2px solid black;
+}
+
+img {
+    width: 400px;  /* szrokosc elementu*/
+    height: 400px; /* wysokosc elementu*/
+    border-radius: 2px;
+    border: 2px solid rgb(40, 214, 13);
+    text-align: left;
+}
+
+nav {
+    background-color: darkgreen;
+}
+
+.pierwszy_poziom {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding: 0;
+    }
+
+li {
+    list-style-type:lower-alpha;
+    width: 170px;
+    display: inline-block;
+    white-space: nowrap;
+}

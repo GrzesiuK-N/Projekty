@@ -1,0 +1,102 @@
+body {
+	max-width: 1000px;
+	min-width: 500px;
+	background-color: lightgreen; 
+	margin:0px auto;
+	font-family: comic sans ms;
+}
+
+header {
+	border: 1px solid black; 
+	background-color: lightblue; 
+	padding: 20px; 
+	margin:10px 0px 10px;
+	text-align: center;
+}
+
+article {
+	border: 1px solid black;
+	background-color: white;
+	padding: 20px; 
+	margin: 10px 0px; 
+	display: table-cell
+	width: auto;
+}
+
+footer {
+	border: 1px solid black; 
+	background-color: lightblue;
+	padding: 20px; 
+	margin:10px 0px;
+	width: 100px;
+}
+
+nav {
+	background-color: rgb(255, 255, 224);
+	border: 1px solid royalblue;
+	padding: 20px; 
+	display: table-cell;
+	width: 150px;
+}
+
+nav a {
+	color: black;
+	font-size: 16pt;
+}
+
+section {
+	display: table;
+}
+
+#ilustracja {
+	display: block;
+   margin: 10px auto;
+   width: 200px;
+}
+
+p {
+	text-align: center;
+	max-width: 450px;
+	min-width: 150px;
+	margin-left: 220px;
+}
+
+@media only screen and (max-width: 700px) {
+	nav {
+		width: auto;
+		display: block;
+	}
+	select{
+		display: block;
+	}
+ }
+
+ @media only screen and (max-width: 800px) {
+ #prawo {
+		width: auto;
+		max-width: 720px;
+		min-width: 500px;
+		margin: 20px auto;
+		flex: 100%;
+		font-size: 10pt;
+	}
+	#lewo {
+		width: auto;
+		max-width: 720px;
+		min-width: 500px;
+		margin: 20px auto;
+		flex: 100%;
+	}
+ }
+
+ 
+ @media only screen and (max-width: 1200px) {
+	#srodek {
+		   width: auto;
+		   max-width: 1200;
+		   min-width: 800px;
+		   margin: 20px auto;
+		   flex: 100%;
+		   display: table;
+	   }
+	}

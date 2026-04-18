@@ -1,0 +1,34 @@
+table, td, th { border: 1px solid blueviolet}
+
+
+body {
+
+   font-family: comic sans ms;
+   background-color: aliceblue;
+
+}
+
+#cotainer { 
+
+    background-color: whitesmoke;
+    border: 5px solid blue;
+    width: 800px;
+    margin: 30px auto;
+    pudding: 50px;
+}
+
+p {
+    color: teal;
+    font-size: 18pt;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+
+.stworzenie {
+    color:orangered
+}
+
+#figurka {
+    color: rgb(255, 67, 67);
+}
+

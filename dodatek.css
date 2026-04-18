@@ -1,0 +1,16 @@
+body {
+    font-family: comic sans ms;
+    background-color: limegreen;
+}
+
+ol {
+    background-color: lightblue;
+    padding: 3px;
+    width: 700px;
+}
+
+li {
+    background-color: cornflowerblue;
+    padding: 5px;
+    color: green;
+}

@@ -1,0 +1,74 @@
+bodY {
+    background-color:black;
+}
+
+header, footer, #lewa, #srodek, #prawa {
+    background-color: whitesmoke;
+    font-size: 5pt;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    font-family: comic sans ms;
+}
+
+#lewa {
+    width: 260px;
+    border: 1px solid red;
+    padding: 20px;
+}
+
+
+#srodek {
+    width: 414px;
+    border: 1px solid rgb(0, 255, 4);
+    padding: 20px;
+    margin: 0px, 20px;
+}
+
+
+#prawa {
+    width: 160px;
+    border: 1px solid rgb(21, 0, 255);
+    padding: 20px;
+}
+
+header, footer {
+    flex: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+nav a:hover {
+   background-color: white;
+}
+
+nav a {
+    display: block;
+   text-decoration: none;
+   color: black;
+   background-color: burlywood;
+   text-align: center;
+   margin-bottom: 10px;
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 15pt;
+   white-space: pre-line;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 32pt;
+}
+
+#prawa img {
+    width: 160px;
+}

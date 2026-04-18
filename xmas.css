@@ -1,0 +1,76 @@
+header {
+    background-color: oklch(58.462% 0.19217 143.057);
+    color: oklab(96.798% -0.07139 0.19849);
+    font-family: Tahoma;
+    padding: 20px;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header h3 {
+    font-size: 20px;
+}
+
+h1, h3 {
+    text-align: center;
+    text-shadow: 0px 0px 5px white;
+}
+
+footer {
+    background-color: oklch(58.462% 0.19217 143.057);
+    color: oklab(80.78% 0 -0.00009);
+    font-family: Arial;
+    font-size: 15px;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+ /* padding: 20px; */
+}
+
+p:hover {
+    color: oklab(88.67699999999999% -0.01694 0.18133);
+}
+
+#lewy {
+    background-color: oklab(72.285% -0.1912 0.14429);
+    font-family: Tahoma;
+    font-size: 15px;
+    line-height: 1.7;
+    color: oklab(88.67699999999999% -0.01694 0.18133);
+    width: 30%;
+    height: 300px;
+}
+
+#prawy {
+    background-color: oklab(58.065999999999995% -0.04283 0.11907);
+    color: oklch(100% 0.00011 271.152);
+    font-family: Tahoma;
+    font-size: 13px;
+    width: 50%;
+    height: 300px;
+}
+
+input {
+    background-color: oklab(86.80099999999999% -0.1262 0.0913);
+}
+
+div {
+    padding: 20px;
+}
+
+@media screen {
+    
+.bloki {
+    display: flex;
+}
+
+}
+
+body {
+    background-color: black;
+}

@@ -1,0 +1,84 @@
+@import url('https://adegdansk.pl/echo/framwork/fonststack.css');
+meta{
+    display: none;
+}
+
+/* §e Main CSS file§r*/ 
+:root:has(meta[set][color="red"]) {
+    --c1: red;
+    --b1: black;
+}
+:root:has(meta[set][color="green"]) {
+    --c1: lime;
+    --b1: black;
+}
+:root:not(:has(meta[set][color])) {
+    --c1: red;
+    --b1: black;
+}
+
+
+
+
+*[bg1]{
+    background: var(--b1);
+}
+*[fg1]{
+    color: var(--c1)
+}
+
+
+body{
+    background: var(--b1);
+    color:var(--c1);
+    font-size: 24px;
+}
+a{
+    color:var(--c1);
+}
+
+hr[v]{
+    border: none;
+}
+thead{
+    text-align: center;
+    width: fit-content;
+}
+table{
+    border-collapse: collapse;
+}
+tr{
+    border: 1px solid white;
+    color:white;
+}
+td {
+    
+    border: 1px dotted white;
+}
+
+cb{
+    display: table;
+}
+cr{
+    display: table-row;
+}
+cc{
+    display: table-cell;
+}
+
+grid{
+    display: grid;
+    grid-template-columns: 5%;
+    grid-auto-flow: column;
+}
+
+
+select{
+    background-color: #222;
+    color: #aaf;
+}
+
+textarea{
+    background-color: #222;
+    color: #ccf;
+}

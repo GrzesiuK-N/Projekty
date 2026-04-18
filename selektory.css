@@ -1,0 +1,77 @@
+/*selektor uniwersalny */
+*{
+    font-size: 25pt;
+}
+/*selektory tagu */
+span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+}
+/*selektor potomka - przykład:tagi span wewnątrz div */
+div span{
+    font-family: comic sans ms;
+    color: blue;
+}
+/* */
+div span{
+    color: aqua;
+}
+/* selektor dziecka - przykład tag <p> BEZPOŚREDNIO wewnątrz <article> */
+article > p{
+    color: red;
+}
+/* selektor id */
+#trzeci{
+    color: orange;
+}
+/*selektor brata - następującego po sobie elementu, przykład: tag <p> po idenfikatorze #nasz */
+#nasz + p{
+    color: purple;
+}
+/*selektor wsZystkich braci - wszystkich elementów następujących po wymienionym przykład - wszystkie
+tagi <p> po indefikatorze #nasz */
+#nasz ~ p {
+    font-size: 40pt;
+}
+/*selektor elementu z konkretnym atrybutem przykład: tag */
+span[id] {
+    color: aquamarine;
+}
+/*selektor elemntu z konkretnym atrybutem i konkretną wartością */
+span[id="drugi"] {
+    color: magenta;
+}
+/* selektor elemntu z konkretnym atrybutu zawierający pewien wyraz przykład - tagi <a> z atrybutem href,
+ktrórych zawartości zawiera słowo */
+a[title~="Wikipedia"] {
+  color:gold
+}
+/*pseudo klasa na element odwiedzony */
+a:visited {
+    color:gray;
+}
+/* pseudo klasa na najechanie myszką*/
+a:hover {
+    color:wheat;
+}
+/* pseudo klasa na element aktywny (kliknięty)?*/
+a:active {
+    color:cyan;
+}
+/* pseudo klasa na pierwszą linie */
+#definicja:first-line {
+ color:red
+}
+
+/* pseudo klasa na pierwszą literę */
+#definicja::first-letter {
+    font-size: 50pt;
+   }
+/* pseudo klasę na elemtu własnie wpisywany*/
+input:focus {
+    background-color: lightblue;
+}
+/* grupowanie selektorów - jeden styl dla kilku*/
+p, span, a[title~="Wikipedia"] {
+    font-family: Comic Sans Me;
+}

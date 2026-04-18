@@ -1,0 +1,26 @@
+@import url("../framwork/fonststack.css");
+
+body{
+    padding: 15px;
+    background-color: black;
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+form{
+    max-width: 1000px;
+    width: 50%;
+    margin:auto;
+    padding: 15px;
+    border: 2px dashed salmon;
+}
+
+.metadata{
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+textarea{
+    width: 80%;
+}

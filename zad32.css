@@ -1,0 +1,155 @@
+body {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ccffcc; 
+    margin: 0 auto;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    border: 1px solid black;
+    background-color: #66ccff; 
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #ffffcc;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #003366; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+article {
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+article img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    border: 1px solid black;
+    background-color: #66ccff;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    body {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        font-size: 1.4em;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        font-size: 0.9em;
+    }
+
+    header {
+        font-size: 1.2em;
+    }
+}
+
+img {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #ffffcc;
+    padding: 10px;
+}
+
+.content {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-left: 2px solid #000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.game {
+    display: flex;
+}
+
+.play{
+    width: 20%;
+    background-color: #ffffcc;
+    padding: 10px;
+}
+
+.contentt {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-right: 2px solid #000;
+}
+
+.play footer {
+    list-style-type: none;
+    padding: 0;
+}
+
+.play footer {
+    margin-bottom: 10px;
+}

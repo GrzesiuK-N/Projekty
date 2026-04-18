@@ -1,0 +1,25 @@
+body {
+    font-family: comic sans ms;
+    background-color: yellowgreen;
+}
+
+main {
+    background-color: chartreuse;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border: 5px solid chocolate;
+    border-radius: 20px;
+    color: rgb(71, 40, 0);
+}
+
+#rezultat {
+    margin-top: 20px;
+    color: crimson;
+}
+
+input[name="jako"] {
+    font-size: 20pt;
+    width: 45px;
+    accent-color: yellow;
+}

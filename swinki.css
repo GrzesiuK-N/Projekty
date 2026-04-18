@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(138, 68, 26); /* kolor tla*/
+}
+article{
+    margin-right: 200px; /* margines zewnetrzny*/
+    padding: 20px;   /* margines wewnetrzny*/
+    background-color: whitesmoke;
+    height: 600px;
+    overflow-y: scroll;
+    /*
+    border-width: 5px;  - grubosc ramki
+    border-color: rgb(212, 242, 16);  - kolor ramki
+    border-style: double; - styl ramki
+    */
+    border: 3px double rgb(12, 8, 8); 
+}
+h1 {
+    color: whitesmoke;
+    font-size: 30pt;          /* rozmiar czcionki*/
+    font-family: 'lucian sans ms'; /* rodzaje czcionki*/
+   text-align: center;
+}
+
+p {
+   text-align: justify;   /* wyrownanie czcionki*/
+   font-style: italic;    /* styl czcionki: pochylony*/
+}
+
+a {
+    font-size: 15pt;
+    color: blueviolet
+}
+a:link{               /* link nieodwiedzony*/
+    color: rgb(138, 68, 26);
+}
+a:visited{            /*link odwiedzony*/
+    color: rgb(255, 255, 255);
+}
+a:hover{              /*po nacisnieciu myszki*/
+    color: yellow;
+
+}
+a:active{             /*aktywny, w trakcie klikniecia*/
+    color: blue;
+}
+
+/* font-variant: small-caps; */ /*wariant czcionki:kapitaliki*/
+
+img {
+    width: 500px;  /* szrokosc elementu*/
+    height: 330px; /* wysokosc elementu*/
+    padding: 20px;
+    float: left;
+}
+
+
+nav {
+    background-color: rgb(204, 132, 69);
+}
+
+h1 {
+    font-family: comic sans ms;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(168, 68, 26);
+    font-size: 18;
+    color: whitesmoke;
+}

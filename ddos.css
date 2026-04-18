@@ -1,0 +1,127 @@
+body {
+    background-image: url('tło.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 50px;
+}
+
+article{
+    margin: 250px;   /* margines zewnetrzny*/
+    padding: 20px;   /* margines wewnetrzny*/
+    background-color: whitesmoke;
+    height: 600px;
+    overflow-y: scroll;
+    /*
+    border-width: 5px;  - grubosc ramki
+    border-color: rgb(212, 242, 16);  - kolor ramki
+    border-style: double; - styl ramki
+    */
+    border: 1px double rgb(255, 255, 255); 
+}
+
+h1 {
+    color: greenyellow;
+    font-size: 30pt;          /* rozmiar czcionki*/
+    font-family: 'lucian sans ms'; /* rodzaje czcionki*/
+   text-align: center;
+}
+
+p {
+   text-align: justify;   /* wyrownanie czcionki*/
+   font-style: italic;    /* styl czcionki: pochylony*/
+}
+
+a {
+    color: blueviolet
+}
+a:link{               /* link nieodwiedzony*/
+    color: lightgreen;
+}
+a:visited{            /*link odwiedzony*/
+    color: rgb(255, 255, 255);
+}
+a:hover{              /*po nacisnieciu myszki*/
+    color: yellow;
+
+}
+a:active{             /*aktywny, w trakcie klikniecia*/
+    color: blue;
+}
+
+/* font-variant: small-caps; */  /*wariant czcionki:kapitaliki*/
+
+img {
+    float: left;
+    width: 400px;  /* szrokosc elementu*/
+    height: 400px; /* wysokosc elementu*/
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding: 0;
+    }
+
+li {
+    width: 167px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+li a{
+    width: 170px;
+    display:block;
+    background-color: chartreuse;
+    float: left;
+    text-align: center;
+}
+
+li a:visited,li a:link {
+    background-color: darkgreen;
+    width: 170PX;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px outset rgb(0, 0, 0);
+}
+
+li a:hover, li a:active {
+    background-color: crimson;
+    border: 2px inset black;
+    padding: 5px 0px 5px 10px;
+}
+
+.pierwszy_poziom li{
+  position: relative;
+}
+
+.pierwszy_poziom  .poziom_drugi{
+    display: none;
+    position: absolute;
+    top: 30px;
+    width: 170px;
+}
+
+li:hover  .poziom_drugi{
+    display: block;
+}
+
+article{
+    margin-top: 50px;
+    clear: both; /* koniec działania float*/
+    font-size: 20pt;
+    font-family: comic sans ms;
+}
+
+.pierwszy_poziom {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+img{
+    position: relative;
+    width: 250px;
+    height: 300px;
+}
+

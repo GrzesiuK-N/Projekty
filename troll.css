@@ -1,0 +1,33 @@
+body {
+    background-color: silver; /* kolor tla*/
+}
+
+div{
+    background-color: lightyellow;
+    width: 800px;
+    border: 5px solid grey;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: large;
+    font-family: comic sans ms;
+}
+
+h1{
+text-align: center;
+color: darkgreen;
+font-size: 40pt;
+font-family: comic sans ms;
+margin: 0px;
+}
+
+img{
+width: 250px;
+float: left;
+margin: 20px;
+}
+
+a{
+    color: red;
+    font-size: 14px;
+}
+

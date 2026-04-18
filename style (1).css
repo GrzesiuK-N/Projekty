@@ -1,0 +1,57 @@
+* {
+    font-family: Georgia;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    padding: 30px;
+    background: linear-gradient(#A0522D, #F5DEB3); 
+}
+
+menu {
+    background-color: wheat;
+    padding: 14px;
+    margin: 0;
+}
+
+main {
+    background-color: wheat;
+    margin: 50px;
+}
+
+footer {
+    padding: 30px;
+    background: linear-gradient(#F5DEB3, #A0522D); 
+}
+
+a {
+    background-color: sienna;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+table, td {
+    border: 1px solid sienna;
+    border-collapse: collapse;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    padding: auto;
+}
+
+td {
+    padding: 5px;
+}
+

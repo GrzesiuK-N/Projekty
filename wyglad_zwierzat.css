@@ -1,0 +1,18 @@
+body {
+    color: snow;
+    background-color: whitesmoke;
+    font-family:comic sans ms;
+}
+
+button {
+    min-block-size: 24px;
+    max-block-size: 50px;
+    background-color:seashell;
+    border-color: white;
+    color:azure ;
+    border-style: ridge;
+    border-radius: 40px
+    
+}
+
+

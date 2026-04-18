@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&family=Noto+Sans+Anatolian+Hieroglyphs&family=Noto+Sans+Egyptian+Hieroglyphs&family=Noto+Sans+Math&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans+Symbols+2&family=Noto+Sans+Symbols:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'KreativeSquare';
+    src: url('KreativeSquare.eot'); /* IE9 Compat Modes */
+    src: url('KreativeSquare.ttf') format('truetype');;
+}
+
+*{
+    font-family: "Noto Sans Mono","Noto Emoji","Noto Sans Symbols","Noto Sans Symbols 2","Noto Sans Math","KreativeSquare","Noto Sans Egyptian Hieroglyphs","Noto Sans Anatolian Hieroglyphs";
+}

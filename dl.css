@@ -1,0 +1,31 @@
+dl{
+    background-color: chartreuse;
+    border: 4px solid chocolate;
+    font-family: comic sans ms;
+    width: 1600px;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+dt {
+    font-size: 240%;
+    color: whitesmoke;
+}
+
+dd {
+    margin-bottom: 30px;
+    padding: 1%;
+}
+
+dd:hover {
+    background-color:gainsboro ;
+}
+
+dd~dd:hover {
+    background-color: deepskyblue;
+}
+
+dt~dt:hover {
+    background-color: rgb(101, 64, 8);
+}
+

@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: red;
+    color:whitesmoke;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1550px;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(6, 77, 63);
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.left-panel {
+    background-color: rgb(131, 203, 199);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-block {
+    background-color:rgb(223, 243, 242);
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 5px;
+    border: none;
+}
+
+form button {
+    padding: 10px;
+    background-color: #006600;
+    color: magenta;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #008800;
+}
+
+.text-block h2 {
+    margin-top: 0;
+}
+
+.text-block ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.center-panel {
+    text-align: center;
+    color: black;
+}
+
+.center-panel img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.center-panel a {
+    color: rgb(117, 249, 77);
+    text-decoration: none;
+}
+
+.center-panel a:hover {
+    text-decoration: underline;
+}
+
+.right-panel {
+    background-color: rgb(131, 203, 199);
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(6, 77, 63);
+    font-size: 0.9em;
+}

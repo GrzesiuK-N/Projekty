@@ -1,0 +1,106 @@
+body {
+	background-image: linear-gradient(lightgreen, lightyellow, pink);
+	font-family: Verdana;
+	font-size: 14pt;
+}
+#main {
+	background-color: white;
+	padding: 20px;
+	border-radius: 20px;
+	border: 2px solid gray;
+	max-width: 800px;
+	margin: 20px auto;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	margin: 10px 0 0;
+}
+p {
+	font-family: Calibri;
+	font-size: 14pt
+}
+
+#tekst2 {
+	background-color: lightblue; 
+	font-family: verdana; 
+	font-size: 15pt; 
+	padding: 10px; 
+	border-radius: 10px; 
+	display: inline-block; 
+	margin-bottom: 10px;
+}
+
+#tekst2 {
+	background-color: lightblue; 
+	font-family: verdana; 
+	font-size: 15pt; 
+	padding: 10px; 
+	border-radius: 10px; 
+	display: inline-block; 
+	margin-bottom: 10px;
+}
+
+#stylowytekst {
+	display: inline-block; 
+	background-color: lightgray; 
+	padding: 10px; 
+	border-radius: 10px; 
+	font-size: 10pt; 
+	color: green;
+}
+
+#flaga {
+	width: 300px; 
+	border: 1px solid black;
+}
+#pasek1 {
+	height: 75px; 
+	background-color: gray;
+}
+#pasek2 {
+	height: 75px; 
+	background-color: blue;
+}
+
+#elements {
+	display: inline-block; 
+	background-color: lightyellow; 
+	padding: 10px; 
+	border-radius: 10px;
+}
+#elements img {
+	width: 100px; 
+	border: 5px solid transparent; 
+	margin: 5px;
+}
+#elements .air   {
+	border: 5px solid lightgray; 
+}
+#elements .earth {
+	border: 5px solid green; 
+}
+#elements .fire  {
+	border: 5px solid orange; 
+}
+#elements .water {
+	border: 5px solid blue; 
+}
+
+#dzisiaj {
+	display: inline-block; 
+	background-color: lightgreen; 
+	padding: 10px; 
+	border-radius: 10px;
+}
+
+#zegar {
+	font-family: courier new; 
+	font-size: 30pt; 
+	background-color: lightgray; 
+	padding: 20px; 
+	border-radius: 20px; 
+	display: inline-block; 
+	margin-bottom: 10px;
+}
