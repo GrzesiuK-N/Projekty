@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="chat.js"></script>
+    <link rel="stylesheet" href="styl.css">
+    <title>Chat</title>
+</head>
+<body>
+
+    <header>
+        <h2>Chat</h2>
+    </header>
+
+    <aside>
+        <h3>Chaty</h3>
+        <ul>
+            <li>Ogólny</li>
+            <li>Tematyczny
+                <ol>
+                    <li>Turystyczny</li>
+                    <li>Żeglarski</li>
+                    <li>Filateistyczny</li>
+                    <li>Hodowla zwierzątek domowych</li>
+                </ol>
+            </li>
+        </ul>
+        <h3>Uczestnicy</h3>
+
+        <p>Jolanta Nowak</p>
+        <img src="Jolka.jpg" alt="Jolanta Nowak">
+
+        <p>Krzysztof Łukasiński</p>
+        <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+    </aside>
+
+    <main>
+        <div id="chat">
+            <div class="wyp jola">
+                <img src="Jolka.jpg" alt="Jolanta Nowak">
+                <p>Cześć idziesz jutro do kina?</p>
+            </div>
+
+            <div class="wyp krzysiek">
+                <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+                <p>Tak! A ty?</p>
+            </div>
+
+        </div>
+        Wpisz wiadomość: <input id="text">
+        <button id="wyslij">Wyślij</button> <br>
+        <button id="gen">Generuj losową odpowiedź</button>
+    </main>
+
+    <footer>
+        <H5>Chat wykonał: 01020304050</H5>
+    </footer>
+
+</body>
+</html>

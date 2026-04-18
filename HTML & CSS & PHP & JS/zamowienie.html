@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fotografia</title>
+</head>
+<body>
+    
+<header>
+    <h1>Fotografia artystyczna</h1>    
+</header>
+<section>
+    <img alt="obrazy do sprzedaży" src="1.jpg" title="1.jpg">
+    <img alt="obrazy do sprzedaży" src="2.jpg" title="2.jpg">
+    <img alt="obrazy do sprzedaży" src="3.jpg" title="3.jpg">
+    <img alt="obrazy do sprzedaży" src="4.jpg" title="4.jpg">
+    <img alt="obrazy do sprzedaży" src="5.jpg" title="5.jpg">
+    <img alt="obrazy do sprzedaży" src="6.jpg" title="6.jpg">
+    <img alt="obrazy do sprzedaży" src="7.jpg" title="7.jpg">
+    <img alt="obrazy do sprzedaży" src="8.jpg" title="8.jpg">
+    <img alt="obrazy do sprzedaży" src="9.jpg" title="9.jpg">
+    <img alt="obrazy do sprzedaży" src="10.jpg" title="10.jpg">
+</section>
+<main> 
+    <section id="lewy">
+        <h3>Zamowówienie</h3>
+        <label for="plik">Wybierz obraz </label>
+        <input type="file" id="plik" accept="image/jpeg">
+        <br>
+       <label for="licz_kopii"> Liczba Kopii: </label>
+       <input type="number" id="licz_kopii">
+        <br>
+        <input id="papier_blyszczacy" type="radio" checked name="papier"> Papier błyszczący
+        <br>
+        <input id="papier_matowy" type="radio" name="papier"> Papier matowy
+        <button onclick="dodaj()">Dodaj do koszyka</button>
+    </section>
+    <div id="laczenie">
+    <nav>
+        <ul>
+            <li>
+                <a href="regulamin.html">Regulamin</a>
+            </li>
+            <li>
+                <a href="uslugi.html">Usługi</a>
+            </li>
+            <li>
+                <a href="https://pixabay.com">Zdjęcia</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="prawy">
+        <h3>Koszyk</h3>
+        <div id="koszyk"></div>
+    </section>
+    </div>
+</main>
+<footer>
+    <p>Autor strony: <em>01020304</em></p>
+</footer>
+
+<script> 
+    function dodaj() {
+        var plik = document.getElementById("plik");
+        var licz_kopii = document.getElementById("licz_kopii").valueAsNumber;
+        var papier_blyszczacy = document.getElementById("papier_blyszczacy").checked;
+        var cena;
+        var nazwa_Pliku = plik.files[0].name;
+        var koszyk = document.getElementById("koszyk");
+        if (papier_blyszczacy == true) {
+            cena = 1.50*licz_kopii;
+        }
+        else{
+            cena = 2*licz_kopii;
+        }
+        //cin 56*1.50
+       //int papier_b = 1.50;
+       // int papier_m = 2;
+       console.log(nazwa_Pliku);
+       console.log(cena);
+        console.dir(papier_blyszczacy);
+        console.dir(licz_kopii);
+        console.dir(plik);
+
+        var obraz = document.createElement('img');
+        obraz.src = URL.createObjectURL(plik.name);
+        var paragraf = document.createElement('p');
+        paragraf.innerText = `Liczba kopii: ${licz_kopii}`;
+        var paragraf2 = document.createElement('p');
+        paragraf2.innerText = `Cena: ${cena}`;
+        koszyk.appendChild(obraz);
+        koszyk.appendChild(paragraf);
+        koszyk.appendChild(paragraf2);
+    }
+</script>
+
+</body>
+</html>

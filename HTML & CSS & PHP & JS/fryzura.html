@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl8.css">
+    <title>Fryzjerstwo</title>
+</head>
+<body>
+
+<section>
+    <div id="cointeiner">
+    <article id="lewy">
+        <div id="lewy1">
+            <a href="index.html"><h1>SALON FRYZJERSKI</h1></a>
+        </div>
+        <div id="lewy2">
+            <h2>PROMOCJA!</h2>
+        <form>
+            <input type="radio" name="dlugosc" id="r1" value="K"> Krótkie <br>
+            <input type="radio" name="dlugosc" id="r2" value="S"> Srednie <br>
+            <input type="radio" name="dlugosc" id="r3" value="P"> Półdługie <br>
+            <input type="radio" name="dlugosc" id="r4" value="D"> Długie <br>
+            <script onclick="przycisk()"><input type="submit" value="Odkryj_Promocje"></script>
+        </form>
+        </div>
+        <div id="lewy3">
+            <p>Witaj! Miło nam, że odwiedziłeś nasz salon. Sprawdź promocje!</p>
+            <h4>Kontakt: 444 555 666</h4>
+        </div>  
+        </article>
+        <article id="prawy">
+        <div id="prawy1">
+            <a href="fryzura.html"><h4>Ceny strzyżenia</h4></a>
+            <table>
+                <tr>
+                    <th>Długość włosów</th> <th>Cena</th> 
+                </tr>
+
+                <tr>
+                    <td>Krótkie</td> <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>Srednie</td> <td>30</td>
+                </tr>
+
+                <tr>
+                    <td>Półdługie</td> <td>40</td>
+                </tr>
+
+                <tr>
+                    <td>Długie</td> <td>50</td>
+                </tr>
+            </table>
+        </div>
+        <div id="prawy2">
+            <img src="obraz1.jpg" alt="Fryzjerka">
+        </div>
+        </article>
+    </div>
+        <footer>
+            Autor: 01020304050
+        </footer>
+    </section>
+
+    <script>
+        function przycisk() {
+            var K = document.getElementById("r1").checked;
+            var S = document.getElementById("r2").checked;
+            var P = document.getElementById("r3").checked;
+            var D = document.getElementById("r4").checked;
+            K = ""
+
+            console.dir(K);
+            console.dir(S);
+            console.dir(P);
+            console.dir(D);
+
+        }
+        
+    </script>
+
+    <!--K,S,P,D -->
+
+</body>
+</html>

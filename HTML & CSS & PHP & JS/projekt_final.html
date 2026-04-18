@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwintesencja Projektu - JavaScript & HTML</title>
+    <!-- Zmieniamy nazwę na docelową dla połączonego projektu -->
+    <script src="projekt_final.js"></script>
+    <style>
+        body {
+            background-image: linear-gradient(135deg, pink, #fcdea8, lightyellow, lightgreen, lightblue, #cba9ec);
+            background-attachment: fixed;
+            font-family: 'Verdana', 'Calibri', sans-serif;
+            font-size: 14pt;
+            margin: 0;
+            padding: 20px;
+        }
+        main {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 25px;
+            border: 3px solid #555;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 { text-align: center; color: #333; text-transform: uppercase; border-bottom: 2px solid #333; padding-bottom: 10px; }
+        h2 { color: #2c3e50; margin-top: 30px; border-left: 5px solid #2c3e50; padding-left: 10px; }
+        p { line-height: 1.6; }
+        .zadanie-kontener {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #ddd;
+            margin: 15px 0;
+        }
+        .wynik {
+            min-height: 50px;
+            border: 2px dashed #444;
+            padding: 15px;
+            margin-top: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        input, button { padding: 8px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 12pt; }
+        button { cursor: pointer; background-color: #2c3e50; color: white; border: none; transition: 0.2s; }
+        button:hover { background-color: #34495e; transform: scale(1.05); }
+        img { max-width: 200px; border-radius: 10px; display: block; margin: 10px auto; cursor: crosshair; }
+        .hidden-section { display: none; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1>JS Mastery - Projekt Zintegrowany</h1>
+    
+    <!-- Zadanie 1: Manipulacja treścią -->
+    <section class="zadanie-kontener">
+        <h2>1. Status Systemu</h2>
+        <div id="zad1" class="wynik">Inicjalizacja...</div>
+    </section>
+
+    <!-- Zadanie 2: Kalkulator Multizadaniowy -->
+    <section class="zadanie-kontener">
+        <h2>2. Moduł Matematyczny</h2>
+        <p>Przeliczanie Walut (PLN -> EUR) & Pola Figurowego</p>
+        <label>Wartość (PLN/Podstawa):</label> <input type="number" id="inp_val1" placeholder="0">
+        <label>Kurs (EUR/Wysokość):</label> <input type="number" id="inp_val2" placeholder="0">
+        <br>
+        <button id="btn_oblicz_euro">Przelicz na €</button>
+        <button id="btn_oblicz_trojkat">Licz pole Trójkąta</button>
+        <div id="zad2" class="wynik">Czekam na dane...</div>
+    </section>
+
+    <!-- Zadanie 3: Zaawansowany Czas -->
+    <section class="zadanie-kontener">
+        <h2>3. Monitor Czasu Realnego</h2>
+        <p>Wyświetla aktualny dzień tygodnia, nazwę miesiąca oraz godzinę.</p>
+        <button id="btn_czas">Pobierz Czas</button>
+        <div id="zad3" class="wynik">Kliknij, aby sprawdzić godzinę</div>
+    </section>
+
+    <!-- Zadanie 4: Przetwarzanie Ciągów (PESEL / Tekst) -->
+    <section class="zadanie-kontener">
+        <h2>4. Analizator Tekstowy</h2>
+        <p>Wydobywanie kluczowych informacji (5 ostatnich lub 4 pierwsze znaki).</p>
+        <input type="text" id="tekst_input" value="09320219823">
+        <button id="btn_skrot_start">Skróć (Początek)</button>
+        <button id="btn_skrot_koniec">Skróć (Koniec)</button>
+        <div id="zad4" class="wynik">---</div>
+    </section>
+
+    <!-- Zadanie 5 & 6: Walidacja & Regex -->
+    <section class="zadanie-kontener">
+        <h2>5 & 6. Bezpieczeństwo Danych (Regex)</h2>
+        <form id="rejestracja_final" onsubmit="return false;">
+            Nazwisko / Towar: <input type="text" id="val_nazwa"><br>
+            Wiek / Sztuki: <input type="number" id="val_liczba"><br>
+            Oznaczenie (XX 00000 / TLK 000): <input type="text" id="val_oznaczenie"><br>
+            <input type="submit" id="btn_wyslij" value="Waliduj i Wyślij">
+        </form>
+        <div id="zad5_6" class="wynik">Status walidacji...</div>
+    </section>
+
+    <!-- Zadanie 7: Dynamiczne Interwały -->
+    <section class="zadanie-kontener">
+        <h2>7. System Komunikatów Dynamicznych</h2>
+        <div id="zad7" class="wynik">Sekwencja gotowa...</div>
+    </section>
+
+    <!-- Zadanie 8: Interakcja z Grafiką -->
+    <section class="zadanie-kontener">
+        <h2>8. Laboratorium Smoków</h2>
+        <p>Kliknij, najedź lub zjedź myszką z obrazka.</p>
+        <img id="grafika_interaktywna" alt="Dragon" src="https://www.dragons.acidcave.net/dragons/water.png">
+        <div id="zad8" class="wynik">Śledzenie zdarzeń...</div>
+    </section>
+
+    <!-- Zadanie 9: Zarządzanie Tablicami -->
+    <section class="zadanie-kontener">
+        <h2>9. System Magazynowy (Tablice)</h2>
+        <button id="btn_procesuj_tablice">Sortuj i Filtruj Dane</button>
+        <div id="zad9" class="wynik">Lista obiektów...</div>
+    </section>
+
+    <!-- Zadanie 10: Programowanie Obiektowe -->
+    <section class="zadanie-kontener">
+        <h2>10. Atlas Biologiczny (Obiekty)</h2>
+        <button id="btn_pokaz_szczegoly">Uruchom Szczegóły Obiektu</button>
+        <div id="zad10" class="wynik">Dane obiektu...</div>
+    </section>
+
+    <!-- Zadanie 11: System Quizowy -->
+    <section id="bonus_section" class="hidden-section zadanie-kontener">
+        <h2>11. Quiz & Kalkulator Sumaryczny</h2>
+        <div id="quiz_area">
+            <input type="checkbox" name="opcja" value="10"> Dodaj 10<br>
+            <input type="checkbox" name="opcja" value="20"> Dodaj 20<br>
+            <input type="checkbox" name="opcja" value="50"> Dodaj 50<br>
+        </div>
+        <button id="btn_licz_quiz">Oblicz wynik</button>
+        <div id="zad11" class="wynik">Wynik zaznaczenia: 0</div>
+    </section>
+
+    <footer style="margin-top: 50px; text-align: center; font-size: 0.8em; color: #777;">
+        <hr>
+        <p>&copy; Projekt Kwintesencja - Integracja Wiedzy JavaScript</p>
+        <span style="cursor: pointer; text-decoration: underline;" id="btn_tryb_ekstra">Włącz sekcję bonusową (11)</span>
+    </footer>
+</main>
+
+</body>
+</html>

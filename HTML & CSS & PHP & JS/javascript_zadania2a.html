@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> zadania do pracy samodzielnej </title>
+	<script src="javascript_zadania_grzesiu.js"></script>
+	<style>
+		body {
+			background-image: linear-gradient(pink, #fcdea8, lightyellow, lightgreen, lightblue, rgb(203, 169, 236));
+			font-family: Verdana;
+			font-size: 14pt;
+		}
+		main {
+			background-color: white;
+			padding: 20px;
+			border-radius: 20px;
+			border: 2px solid gray;
+			max-width: 800px;
+			margin: 20px auto;
+		}
+		h1 {
+			text-align: center;
+		}
+		h2 {
+			margin: 10px 0 0;
+		}
+		p, ol, li {
+			font-family: Calibri;
+			font-size: 14pt
+		}
+		div {
+			width: 400px;
+			height: 50px;
+			font-size:20pt;
+			padding: 20px;
+			border: 2px solid black;
+			margin: 10px 0px;
+		}
+		button, input {
+			font-size: 13pt;
+			margin: 5px 0px;
+		}
+		#zad9, #zad11 {
+			height: auto;
+			min-height: 50px;
+			font-size: 13pt;
+		}
+
+	</style>	
+</head>
+<body>
+	<h1>JavaScript - zadania do pracy samodzielnej</h1>
+	<main>
+		<p><b><i>Instrukcje: <br>
+			<span style="color:red">Nie edytuj kodu HTML ani CSS! Wszystkie zadania wykonuj wyłącznie jako kod Javascript!</span> 
+			<br>Podczas wykonywania zadań możesz korzystać z własnych notatek i wcześniej oddanych zadań na classroomie, lecz nie możesz korzystać z żadnych innych pomocy, z AI ani z form komunikacji.</i></b></p>
+		<hr>
+		<h2>1.</h2>
+		<p>Poniżej znajduje się tag &lt;div&gt; z identyfikatorem "zad1" - posiada już pewną zawartość. 
+		Napisz kod Javascript, który wewnątrz tego tagu DODA napis "Hello Again!"</p>
+		
+		<div id="zad1">Hello World!</div>
+	
+		<hr>
+		<h2>2.</h2>
+		<p>Poniżej znajdują się dwa pola &lt;input&gt;. Zajrzyj do kodu HTML aby sprawdzić ich id. Napisz kod Javascript, który sprawi, że po kliknięciu przycisku "oblicz" zostanie obliczona cena w Euro.<br> 
+		<br>Następnie wynik wyświetl w tagu &lt;div&gt; z identyfikatorem "zad2".</p><br>
+		
+		cena w złotówkach: <input type="number" id="zl"><br>
+		kurs Euro: <input type="number" id="kurs"><br>
+		<button id="oblicz">oblicz</button><br><br>
+
+		pole trójkąta:<br>
+		<div id="zad2"></div>
+
+		<hr>
+		<h2>3.</h2>
+		<p>Spraw, aby po kliknięciu przycisku "czas" w tagu &lt;div&gt; z identyfikatorem "zad3" pojawiła się informacja o obecnym dniu, godzinie i minutach w formacie:<br>
+		<b>dzień miesiąc HH:MM</b> - UWAGA: miesiąc powinien być wypisany słownie<br>
+		na przykład:<br>
+		<b>3 grudzień 14:04</b><br>
+		</p>
+
+		<button id="czas">czas</button><br><br>
+
+		czas:<div id="zad3"></div>
+
+
+		<hr>
+		<h2>4.</h2>
+		<p>Poniżej jest pole &lt;input&gt; z wpisanym numerem PESEL (ale można tam wstawić dowolny inny numer). 
+		Ponieważ pierwsze sześć znaków to tylko data urodzenia, najbardziej interesuje nas pięć OSTATNICH znaków.
+		Spraw, aby po kliknięciu przycisku "skrót" z numeru PESEL skrypt wypisał 5 OSTATNICH znaków w tagu &lt;div&gt; z identyfikatorem "zad4"</p>
+
+		PESEL: <input type="text" id="pesel" value="09320219823"><br>
+		<button id="skrot">skrót</button><br><br>
+
+		skrót:<br>
+		<div id="zad4"></div>	
+		<hr>
+		<h2>5.</h2>
+		<p>Poniżej znajduje się formularz o identyfikatorze "rejestracja" zawierający pole tekstowe do wpisania nazwiska oraz wieku.<br> 
+		Spraw aby przy próbie wysłania formularza:</p>
+		<ol>
+		<li>skrypt sprawdził czy nazwisko ma minimum <b>2</b> litery, a maksymalnie <b>50</b>. Jeśli nazwisko ma inną długość, należy wyświetlić w polu "zad5" komunikat <b>"nieprawidłowe nazwisko"</b> i wstrzymać przesyłanie formularza.</li>
+		<li>skrypt sprawdził czy wiek jest większy lub równy <b>18</b> i mniejszy lub równy <b>150</b>. Jeśli liczba jest nieprawidłowa, należy wyświetlić w polu "zad5" komunikat <b>"nieprawidłowy wiek"</b> i wstrzymać przesyłanie formularza.</li>
+		</ol>
+		<p>(jeśli wszystkie dane są OK, formularz powinien przesłać dane normalnie.)</p><br>
+		
+		<form id="rejestracja" action="https://ade.acidcave.net/javascript_zad5a.php" method="post">
+		nazwa towaru: <input type="text" name="nazwisko" id="nazwisko"><br>
+		wiek: <input type="number" name="wiek" id="wiek"><br>
+		<input type="submit" value="wyślij">
+		</form>
+		
+		<div id="zad5"></div>		
+		
+
+		<hr>
+		<h2>6.</h2>
+		<p>Napisz <b><i><u>wyrażenie regularne</i></b></u>  na rejestrację sasmochodu w postaci:<br>
+			- najpierw dokładnie 2 wielkie litery<br>
+			- potem pojedyncza spacja<br>
+			- na końcu od 4 do 5 cyfr<br>
+		Jeśli wpisane w polu tekstowym poniżej oznaczenie rejestracji jest poprawne, wyświetl w tagu "zad6" komunikat <b>"poprawne oznaczenie"</b>. W przeciwnym wypadku wypisz <b>"błąd oznaczenia"</b>.</p><br>
+
+		rejestracja: <input id="rejestracja" type="text">
+		<button id="sprawdz">Sprawdź</button><br>
+		
+		<div id="zad6"></div>
+		<hr>
+		<h2>7.</h2>
+		<p>Spraw aby w tagu "zad7" co 1.5 sekundy zmieniał się napis. Najpierw ma się pojawić napis <b>"Stoi na stacji lokomotywa"</b> a po 1.5 sekundy <b>"Ciężka, ogromna i pot z niej spływa"</b>. Po kolejnym 1.5 sekundy <b>"tłusta oliwa"</b>. Po kolejnym 1.5 sekundy sekwencja ma się powtarzać w nieskończonosć. </p>
+		<div id="zad7"></div>
+		<hr>
+
+		<h2>8.</h2>
+		<p>Poniżej jest grafika smoka z id "grafika". Spraw aby:<br>
+			- po kliknięciu myszką w polu "Zad8" pojawiała się liczba kliknięć (każde kliknięcie aby zwiększało liczbę)
+			- po najechaniu myszką w polu "zad8" powinien pojawić się napis "najechano myszką"
+			- po opuszczeniu myszki napis w polu "zad8" powinien się zmienić na "wyjechano myszką"
+
+		</p>
+		<br>
+
+		<img id="grafika" alt="Water Dragon" src="https://www.dragons.acidcave.net/dragons/water.png">
+		
+		<div id="zad8"></div>
+		
+		<hr>
+		<h2>9.</h2>
+		<p>Dana jest przykładowa tablica o nazwie "miasta", np.<br>
+		<b>miasta = ["Warszawa", "Gdynia", "Sopot", "Gdańsk", "Poznań", "Kraków", "Wrocław", "Radom"]</b><br>
+		(<span style="color:red">Uwaga:</span> to tylko przykładowa tablica. Twój program na zadziałać dla <b>każdej</b> tablicy o nazwie "miasta")<br>
+		W tagu "zad9" po kliknięciu przycisku "miasta" wypisz:<br>
+		- wszystkie miasta <b>posortowane alfabetycznie</b><br>
+		- czy na liście miast znajduje się "Gdańsk" - jeśli tak, wypisz "TAK", jeśli nie, wypisz "NIE"
+		</p>
+		<br>
+		<button id="miasta">miasta</button><br>
+		<div id="zad9"></div>
+		
+		<hr>
+		<h2>10.</h2>
+		<p>Stwórz obiekt o nazwie <b>osoba</b> z polami: <b>imie</b>, <b>nazwisko</b>, <b>wiek</b> oraz <b>czyUczen</b>. <br>Uzupełnij obiekt przykładowymi wartościami, np.: Jan, Kowalski, 16, true<br>
+		Do obiektu dopisz metodę o nazwie <b>wypisz</b>, która powinna działać następująco:<br>
+			- jeśli pole czyUczen jest ustawione na true - wypisz w tagu "zad10" słowa: "Uczeń: - &lt;tu_imię&gt; &lt;tu_nazwisko&gt;"<br>
+			- jeśli pole czyUczen jest ustawione na false - wypisz w tagu "zad10" imię, nazwisko i wiek w postaci: &lt;imię&gt; &lt;nazwisko&gt; lat: &lt;wiek&gt;<br>
+		<br>
+		po kliknięciu przycisku "uruchom" wywolaj metodę <b>szczegoly</b> dla oiektu <b>zwierze</b>. 
+		</p><br>
+		<button id="uruchom">uruchom</button><br>
+		<div id="zad10"></div>
+
+		<span id="notverynormal" style="display:none">
+		<hr>
+		<h2>*11.</h2>
+		<p>Poniżej jest pytanie z czterema checkboxami. Napisz skrypt, który w tagu "zad11" wyświetli sumę tych liczb, które są zaznaczone. Zauważ, że odpowiedzi nie mają żadnego id i nie wolno ci ich dodać. Należy wykorzystać coś innego niż getElementById.</p>
+
+
+		<br><br>
+		<input type="checkbox" name="pytanie" value="2"> 2<br>
+		<input type="checkbox" name="pytanie" value="6"> 6<br>
+		<input type="checkbox" name="pytanie" value="9"> 9<br>
+		<input type="checkbox" name="pytanie" value="3"> 3<br><br>
+		<div id="zad11"></div>
+
+		</span>
+		
+		
+	</main>
+	<footer style="font-size: 8pt; width: 100%; padding: 20px;">&copy; Technikum jakieś czy coś.<br>
+	<span style="cursor: pointer; text-decoration: underline" onclick="document.getElementById('notverynormal').style.display = 'block';">Skończyłem / skończyłam i nudzi mi się</span></footer>
+</body>
+</html>

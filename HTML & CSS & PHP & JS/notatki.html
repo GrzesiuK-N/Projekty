@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Planer zadań</title>
+</head>
+<body>
+    
+<aside>
+    <img src="obraz.jpg" alt="notatki">
+</aside>
+<header>
+    <h2>Moje zadania</h2>
+</header>
+<nav>
+    <input id="zadanie" type="text" placeholder="Dodaj zadanie...">
+    <button onclick="Dodaj()">Dodaj</button>
+</nav>
+<main>
+    <ul id="lista">
+        <li>Wyprowadzić psa <button onclick="Przekresl(this)">Wykonane</button></li>
+        <li>Gimnastyka <button onclick="Przekresl(this)">Wykonane</button></li>
+        <li>Zakupy <button onclick="Przekresl(this)">Wykonane</button></li>
+        <li>Spacer z kumplem <button onclick="Przekresl(this)">Wykonane</button></li>
+        <li>Odrabianie lekcji z młodszą siostrą <button onclick="Przekresl(this)">Wykonane</button></li>
+        <li>Projekt na geografię <button onclick="Przekresl(this)">Wykonane</button></li>
+    </ul>
+</main>
+<footer>
+    <h3>Notatki: 01020304</h3>
+</footer>
+
+<script>
+    function Dodaj() {
+        var lista = document.getElementById('lista');
+        var element = document.createElement('li');
+        var zadanie = document.getElementById('zadanie').value;
+        element.innerHTML = `${zadanie} <button onclick="Przekresl(this)">Wykonane</button>`;
+        lista.appendChild(element);
+    }
+
+    function Przekresl(przycisk) {
+        var element = przycisk.parentElement;
+        element.style.textDecoration = 'line-through';
+    }
+</script>
+    
+</body>
+</html>

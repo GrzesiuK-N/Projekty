@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="obraz1.png">
+    <title>Firma IT</title>
+    <script src="kontakt.js"></script>
+</head>
+
+<body>
+<section>
+    <div id="polaczenie">
+    <div id="logo">
+        <img src="obraz1.png" alt="firma it">
+    </div>
+    
+    <menu>
+        <a href="index.html">Strona Główna</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
+    </menu>
+</div>
+    <header>
+        <img src="animacja.gif" alt="Usługi informatyczne">
+    </header>
+
+    <main>
+        <h2>Kontakt</h2>
+        <form id="kontakt">
+        <table>
+            <br>
+            <tr>
+                <td>Imię: </td> <td> <input type="text" id="imie"></td>
+            </tr>
+
+            <tr>
+                <td>Nazwisko: </td> <td> <input type="text" id="nazwisko"> </td>
+            </tr>
+
+            <tr>
+                <td>E-mail: </td> <td><input type="email" id="email">
+            <tr>
+                <td>Zgłoszenie </td> <td> <textarea id="zgloszenie" rows="10" cols="40"></textarea> </td>
+            </tr>
+
+            <tr>
+                <td></td> <td> <input type="checkbox" id="zgoda"><label for="zgoda"> Zapoznałam/em się z regulaminem </label></td>
+            </tr>
+
+            <tr>
+                <td></td> <td> <input type="reset" value="Resetuj"> <input type="submit" value="przeslij" id="przeslij"> </td>
+            </tr>
+        </table>
+    </form>
+        <hr>
+        <div id="wynik" ></div>
+    </main>
+    <footer>Autor strony: <strong>10203040</strong></footer>
+
+</section>
+</div>
+</body>
+</html>

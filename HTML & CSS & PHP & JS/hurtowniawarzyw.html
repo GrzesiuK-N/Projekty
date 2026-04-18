@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="hurtowniawarzyw.js"></script>
+    <link rel="stylesheet" href="hurtowniawarzyw.css">
+    <title>strona o karotkach</title>
+</head>
+<body>
+
+    <main>
+    <form action="cokolwiek.php" method="post" id="formularz">
+        warzywo: <input type="text" name="warzywo" id="warzywo"> <br> <Br>
+        masa: <input type="number" name="masa" id="masa" step="0.01"> <br> <Br>
+        cena: <input type="number" name="cena" id="cena" step="0.01"> <br> <Br>
+        dostawa: 
+        <select name="dostawa" id="dostawa">
+            <option value="kurier">kurier</option>
+            <option value="odbior">odbior osobisty</option>
+            <option value="inpost">INpost</option>
+            <option value="zabka">w zabka</option>
+        </select>
+        zamawiam jako: <br>
+        <input type="radio" name="jako" value="firma"> firma <br>
+        <input type="radio" name="jako" value="osoba"> osoba prywatna <br>
+        <input type="radio" name="jako" value="zwierze"> zwierzę <br>
+        <br><bre></bre>
+        czy dostawa premium? <input type="checkbox" name="premium" id="premium" value="tak">
+        <br><br>
+        adres dostawy:
+        <textarea name="adres" id="adres"></textarea>
+        <br> <br>
+        <input type="submit" value="zamów!">
+
+
+    </form>
+
+    <div id="rezultat"></div>
+    
+    </main>
+</body>
+</html>

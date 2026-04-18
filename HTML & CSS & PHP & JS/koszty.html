@@ -19,14 +19,23 @@
     </nav>
 </menu>
 <main>
-    <h1>Panele podłogowe</h1>
-    <img src="laminowane.png" alt="Laminowane">
-    <p>Panele laminowane</p>
-    <img src="winylowe.png" alt="Winylowe">
-    <p>Panele winylowe</p>
-    <img src="deska.png" alt="Deska">
-    <p>Deska</p>
-</main>
+    <h1>Kalkulator kosztów montażu</h1>
+    <input type="number" id="szerokosc">
+    <label for="szerokosc">Szerokość pomieszczenia [m]: </label>
+    <input type="number">
+    <label for="dlugosc" id="dlugosc">Długość pomieszczenia [m]: </label>
+    <p>Typ panelu</p>
+
+<input type="radio" name="arbuzik" id="laminowane">
+    <label>Panele laminowane</label>
+    <input type="radio" name="arbuzik" id="winylowe">
+    <label>Panele winylowe</label>
+    <input type="radio" name="arbuzik" id="deska">
+    <label>Deska podłogowa</label>
+
+    <button>Oblicz </button>
+    <p id="wynik"> </p>
+
 <footer>
     <h5>Autor strony: 01020304</h5>
 </footer>

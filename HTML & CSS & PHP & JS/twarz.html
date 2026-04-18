@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salon kosmetyczny</title>
+        <link rel="stylesheet" href="styl7.css">
+    </head>
+    <body>
+        <div id="lewy-gorny">
+            <h2>Nasza oferta</h2>
+            <ol>
+                <li><a href="twarz.html">Oczyszczanie twarzy</a>
+                    <ul>
+                        <li>Peeling</li>
+                        <li>Maska</li>
+                    </ul>
+                </li>
+                <li>Masaż</li>
+                <li>Makijaż</li>
+            </ol>
+            <a href="index.html" class="home">Strona główna</a>
+        </div>
+
+        <div id="prawy-gorny">
+            <h1>Usługi kosmetyczne</h1>
+        </div>
+
+        <div id="prawy-dolny">
+            <h4>Kalkulator ceny wizyty</h4>
+            <input type="checkbox" name="peeling" id="peeling"> <label for="peeling">Peeling</label><br>
+            <input type="checkbox" name="maska" id="maska"> <label for="maska">Maska</label><br>
+            <input type="checkbox" name="masaz" id="masaz"> <label for="masaz">Masaż twarzy</label><br>
+            <input type="checkbox" name="makijaz" id="makijaz"> <label for="makijaz">Makijaż</label><br>
+            <button onclick="oblicz()">Oblicz cenę</button>
+            <p id="wynik"></p>
+        </div>
+
+        <script>
+            function oblicz() {
+                let wynik = document.getElementById("wynik");
+                let cena = 0;
+
+                if (document.getElementById('peeling').checked) {
+                    cena = cena + 45;
+                }
+
+                if (document.getElementById('maska').checked) {
+                    cena = cena + 30;
+                }
+
+                if (document.getElementById('masaz').checked) {
+                    cena = cena + 20;
+                }
+
+                if (document.getElementById('makijaz').checked) {
+                    cena = cena + 50;
+                }
+
+                wynik.innerHTML = "<p>Cena zabiegów: " + cena + "</p>";
+            }
+        </script>
+
+        <div id="lewy-dolny">
+            <img src="obraz1.jpg" alt="Personel">
+        </div>
+
+        <footer>
+            <p>Autor: <a href="https://ee-informatyk.pl/" target="_blank" style="text-decoration: none;color: unset;">EE-Informatyk.pl</a></p>
+        </footer>
+
+    </body>
+</html>

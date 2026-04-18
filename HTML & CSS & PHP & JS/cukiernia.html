@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cukiernia</title>
+    <script src="cukiernia.js"></script>
+    <link rel="stylesheet" href="cukiernia_I_wygladu.css">
+</head>
+<body>
+    <div id="ryba_olejna">
+    <h1> zamów coś słodkiego </h1>
+
+    <form method="post" action="cukiernia.php">
+        
+        Wybierz co: <select id="jedzenie">
+            <option>brak</option>
+            <option>tort</option>
+            <option>pudding</option>
+            <option>pączki</option>
+            <option>rogaliki</option>
+        </select>
+
+        <br><br>
+
+        ile sztuk (min 2, max 20): <input type="number" id="ilesztuk">
+
+        <br><br>
+
+        imie: <input type="text" id="imie" min="2" max="20"><br><br>
+        nazwisko: <input type="text" id="nazwisko" min="2" max="20"><br>
+
+        <br>
+
+        numer telefonu: <input type="text" id="telefon" min="9" max="9">
+        
+        <br><br>
+
+        adres email: <input type="email" id="email">
+
+        <br><br>
+
+
+        <input type="submit" value="wyślij">
+    </form>
+
+
+    <h3 id="error"></h3>
+    </div>
+    
+</body>
+</html>
