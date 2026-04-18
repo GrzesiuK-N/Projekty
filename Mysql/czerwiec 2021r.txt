@@ -1,0 +1,44 @@
+-- 1
+
+SELECT COUNT(*) AS Liczba_koncertow FROM Koncerty WHERE Kod_pocztowy = '99-508';
+
+-- 2
+
+SELECT Miasto FROM Miasta WHERE Wojewodztwo = 'slaskie';
+
+-- 3
+
+SELECT Wojewodztwo, COUNT(*) AS Liczba_miast FROM Miasta GROUP BY Wojewodztwo;
+
+-- 4
+
+SELECT Miasta.Miasto, COUNT(Koncerty.Id_koncertu) AS Liczba_koncertow FROM Miasta JOIN Koncerty ON Miasta.Kod_pocztowy = Koncerty.Kod_pocztowy GROUP BY Miasta.Miasto ORDER BY Liczba_koncertow DESC;
+
+-- 5
+
+SELECT COUNT(*) AS Koncerty_lipiec FROM Koncerty WHERE MONTH(Data) = 7;
+
+-- 6
+
+SELECT MAX(Koncerty.Data) AS Ostatni_koncert FROM Koncerty JOIN Zespoly ON Koncerty.Id_zespolu = Zespoly.Id_zespolu WHERE Zespoly.Nazwa = 'Czarne klawesyny';
+
+-- 7
+
+SELECT Miasta.Miasto, COUNT(DISTINCT Koncerty.Id_zespolu) AS Liczba_zespolow FROM Miasta JOIN Koncerty ON Miasta.Kod_pocztowy = Koncerty.Kod_pocztowy GROUP BY Miasta.Miasto;
+
+-- 8
+
+SELECT Miasta.Miasto, SUM(Zespoly.Liczba_artystow) AS Suma_artystow FROM Miasta JOIN Koncerty ON Miasta.Kod_pocztowy = Koncerty.Kod_pocztowy JOIN Zespoly ON Koncerty.Id_zespolu = Zespoly.Id_zespolu GROUP BY Miasta.Miasto;
+
+-- 10
+
+SELECT Nazwa FROM Zespoly WHERE Id_zespolu NOT IN (SELECT Id_zespolu FROM Koncerty WHERE Data BETWEEN '2020-07-20' AND '2020-07-25');
+
+-- 11
+
+SELECT Koncerty.Data, DAYOFWEEK(Koncerty.Data) AS Dzien_Tygodnia FROM Koncerty JOIN Miasta ON Koncerty.Kod_pocztowy = Miasta.Kod_pocztowy WHERE Miasta.Miasto = 'Konin';
+
+-- 12
+
+SELECT Zespoly.Nazwa, COUNT(*) AS Koncerty_Weekendowe FROM Zespoly JOIN Koncerty ON Zespoly.Id_zespolu = Koncerty.Id_zespolu WHERE DAYOFWEEK(Koncerty.Data) IN (1, 7) GROUP BY Zespoly.Nazwa;
+

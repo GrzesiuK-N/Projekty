@@ -1,0 +1,3 @@
+-- 9
+
+SELECT Miasta.Miasto, SUM(Zespoly.Liczba_artystow) AS Suma FROM Miasta JOIN Koncerty ON Miasta.Kod_pocztowy = Koncerty.Kod_pocztowy JOIN Zespoly ON Koncerty.Id_zespolu = Zespoly.Id_zespolu GROUP BY Miasta.Miasto HAVING Suma = (SELECT SUM(Zespoly.Liczba_artystow) AS Max_Suma FROM Koncerty JOIN Zespoly ON Koncerty.Id_zespolu = Zespoly.Id_zespolu GROUP BY Kod_pocztowy ORDER BY Max_Suma DESC LIMIT 1);
