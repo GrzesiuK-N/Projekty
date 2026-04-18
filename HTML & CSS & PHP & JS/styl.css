@@ -1,0 +1,51 @@
+body{
+    font-family: Arial;
+    margin: 0;
+}
+
+header{
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    background-color: peru;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+}
+
+.lewy{
+    width: 30%;
+    background-color: wheat;
+    padding: 20px;
+}
+
+.prawy{
+    width: 70%;
+    background-color: bisque;
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

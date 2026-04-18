@@ -1,0 +1,12 @@
+menu {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: auto;
+    background-color: cornflowerblue;
+    color: white;
+    font-family: comic sans ms;
+}
+
+ul {
+    list-style: none;
+}
