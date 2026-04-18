@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\technik\\source\\repos\\koszulex\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|c:\\users\\technik\\source\\repos\\koszulex\\koszulex\\custommsg.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|solutionrelative:koszulex\\custommsg.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|c:\\users\\technik\\source\\repos\\koszulex\\koszulex\\custommsg.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|solutionrelative:koszulex\\custommsg.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|c:\\users\\technik\\source\\repos\\koszulex\\koszulex\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|solutionrelative:koszulex\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|c:\\users\\technik\\source\\repos\\koszulex\\koszulex\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|solutionrelative:koszulex\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|c:\\users\\technik\\source\\repos\\koszulex\\koszulex\\kod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6EC180-C150-4E34-A182-AA51DA624096}|koszulex\\koszulex.csproj|solutionrelative:koszulex\\kod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomMsg.xaml",
+              "DocumentMoniker": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\CustomMsg.xaml",
+              "RelativeDocumentMoniker": "koszulex\\CustomMsg.xaml",
+              "ToolTip": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\CustomMsg.xaml",
+              "RelativeToolTip": "koszulex\\CustomMsg.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-09T15:58:30.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "koszulex\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\MainWindow.xaml",
+              "RelativeToolTip": "koszulex\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-09T11:14:43.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomMsg.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\CustomMsg.xaml.cs",
+              "RelativeDocumentMoniker": "koszulex\\CustomMsg.xaml.cs",
+              "ToolTip": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\CustomMsg.xaml.cs",
+              "RelativeToolTip": "koszulex\\CustomMsg.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T15:58:52.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "kod.cs",
+              "DocumentMoniker": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\kod.cs",
+              "RelativeDocumentMoniker": "koszulex\\kod.cs",
+              "ToolTip": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\kod.cs",
+              "RelativeToolTip": "koszulex\\kod.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T15:58:58.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "koszulex\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\technik\\source\\repos\\koszulex\\koszulex\\MainWindow.xaml.cs",
+              "RelativeToolTip": "koszulex\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T11:14:43.123Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
