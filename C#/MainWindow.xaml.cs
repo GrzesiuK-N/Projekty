@@ -1,93 +1,64 @@
 using System;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
 
-namespace App1
+namespace KalkulatorPodatkowy
 {
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new MeatShopViewModel();
+            this.DataContext = new TaxViewModel();
         }
     }
 
-    public class MeatItem : INotifyPropertyChanged
+    public class TaxViewModel : INotifyPropertyChanged
     {
-        private int _quantity = 0;
-        public string Name { get; set; }
-        public string ImagePath { get; set; }
-        public decimal PricePerKg { get; set; }
-        public MeatShopViewModel Parent { get; set; }
+        private decimal _grossAmount = 9000; 
 
-        public int Quantity
+        public decimal GrossAmount
         {
-            get => _quantity;
-            set {
-                if (value >= 0) {
-                    _quantity = value;
-                    OnPropertyChanged();
-                    OnPropertyChanged(nameof(TotalPriceForMeat));
-                    Parent?.CalculateGrandTotal();
-                }
+            get => _grossAmount;
+            set
+            {
+                _grossAmount = value;
+                OnPropertyChanged();
+                CalculateTaxes();
             }
         }
 
-        public decimal TotalPriceForMeat => Quantity * PricePerKg;
+        private decimal _zus; public decimal ZUS { get => _zus; set { _zus = value; OnPropertyChanged(); } }
+        private decimal _zdrowotna; public decimal Zdrowotna { get => _zdrowotna; set { _zdrowotna = value; OnPropertyChanged(); } }
+        private decimal _pit; public decimal PIT { get => _pit; set { _pit = value; OnPropertyChanged(); } }
+        private decimal _netAmount; public decimal NetAmount { get => _netAmount; set { _netAmount = value; OnPropertyChanged(); } }
 
-        public ICommand AddCommand { get; }
-        public ICommand RemoveCommand { get; }
-
-        public MeatItem(MeatShopViewModel parent)
+        public TaxViewModel()
         {
-            Parent = parent;
-            AddCommand = new SimpleCommand(() => Quantity++);
-            RemoveCommand = new SimpleCommand(() => { if (Quantity > 0) Quantity--; });
+            CalculateTaxes();
+        }
+
+        private void CalculateTaxes()
+        {
+            ZUS = Math.Round(GrossAmount * 0.1371m, 2);
+
+            decimal podstawaZdrowotna = GrossAmount - ZUS;
+            
+            Zdrowotna = Math.Round(podstawaZdrowotna * 0.09m, 2);
+
+            decimal podstawaOpodatkowania = Math.Round(GrossAmount - ZUS - 250, 0); 
+            decimal podatekRaw = (podstawaOpodatkowania * 0.12m) - 300; 
+            PIT = Math.Max(0, Math.Round(podatekRaw, 0));
+
+            NetAmount = GrossAmount - ZUS - Zdrowotna - PIT;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string name = null) =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-    }
-
-    public class MeatShopViewModel : INotifyPropertyChanged
-    {
-        public ObservableCollection<MeatItem> Items { get; set; }
-        private decimal _grandTotal;
-        public decimal GrandTotal
+        protected void OnPropertyChanged([CallerMemberName] string name = null)
         {
-            get => _grandTotal;
-            set { _grandTotal = value; OnPropertyChanged(); }
-        }
-
-        public MeatShopViewModel()
-        {
-            Items = new ObservableCollection<MeatItem>
-            {
-                new MeatItem(this) { Name = "Wagyu", PricePerKg = 3000m, ImagePath = "Wagyu.jpg" },
-                new MeatItem(this) { Name = "Polędwiczki Wieprzowe", PricePerKg = 555m, ImagePath = "poledwiczka_wieprzowa_w_sosie.jpg" },
-                new MeatItem(this) { Name = "Mortadela", PricePerKg = 457m, ImagePath = "Mortadela.jpg" }
-            };
-        }
-
-        public void CalculateGrandTotal() => GrandTotal = Items.Sum(i => i.TotalPriceForMeat);
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string name = null) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-    }
-
-    public class SimpleCommand : ICommand
-    {
-        private readonly Action _execute;
-        public SimpleCommand(Action execute) => _execute = execute;
-        public bool CanExecute(object parameter) => true;
-        public void Execute(object parameter) => _execute();
-        public event EventHandler CanExecuteChanged;
+        }
     }
 }
