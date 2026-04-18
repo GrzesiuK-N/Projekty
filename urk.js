@@ -1,1 +1,0 @@
-m=Math;_=(n,k)=>n?_(n-1,k)+m.round(m.random()*k):0
