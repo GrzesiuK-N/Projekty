@@ -1,64 +1,100 @@
-using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
+﻿using System;
 using System.Windows;
-using System.Windows.Input;
 
-namespace KalkulatorPodatkowy
+namespace Sklep_Koszulex
 {
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
+        public static double suma = 0;
+        int towar1 = 1;
+        double koszulka1 = 129.99;
+        int towar2 = 2;
+        double koszulka2 = 99.99;
+
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new TaxViewModel();
+            ZmienRazem();
         }
-    }
 
-    public class TaxViewModel : INotifyPropertyChanged
-    {
-        private decimal _grossAmount = 9000; 
-
-        public decimal GrossAmount
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            get => _grossAmount;
-            set
+            CustomMsg msg = new CustomMsg("Dziękujemy za zakupy produktów ale pamiętaj na drugi raz będzie 5% drożej. No chyba że zapomnimy jakiegoś naszego klienta wstedy może się komuś upiecze");
+            msg.ShowDialog();
+        }
+
+        public void ZmienRazem()
+        {
+            Razem.Text = Math.Round(suma, 2).ToString() + " zł";
+        }
+
+        public void DodajTowar1(object sender, RoutedEventArgs e)
+        {
+            towar1++;
+            Towar1.Text = Convert.ToString(towar1);
+
+            double res = towar1 * koszulka1;
+            res = Math.Round(res, 2);
+
+            Cena1.Text = res + " zł";
+
+            suma += koszulka1;
+            ZmienRazem();
+
+
+        }
+
+        public void OdejmijTowar1(object sender, RoutedEventArgs e)
+        {
+            if (towar1 > 0)
             {
-                _grossAmount = value;
-                OnPropertyChanged();
-                CalculateTaxes();
+                towar1--;
+                suma -= koszulka1;
             }
+
+            Towar1.Text = Convert.ToString(towar1);
+
+            double res = towar1 * koszulka1;
+            res = Math.Round(res, 2);
+
+            Cena1.Text = res + " zł";
+
+            ZmienRazem();
+
+
         }
-
-        private decimal _zus; public decimal ZUS { get => _zus; set { _zus = value; OnPropertyChanged(); } }
-        private decimal _zdrowotna; public decimal Zdrowotna { get => _zdrowotna; set { _zdrowotna = value; OnPropertyChanged(); } }
-        private decimal _pit; public decimal PIT { get => _pit; set { _pit = value; OnPropertyChanged(); } }
-        private decimal _netAmount; public decimal NetAmount { get => _netAmount; set { _netAmount = value; OnPropertyChanged(); } }
-
-        public TaxViewModel()
+        public void DodajTowar2(object sender, RoutedEventArgs e)
         {
-            CalculateTaxes();
+            towar2++;
+            Towar2.Text = Convert.ToString(towar2);
+
+            double res = towar2 * koszulka2;
+            res = Math.Round(res, 2);
+
+            Cena2.Text = res + " zł";
+
+            suma += koszulka2;
+            ZmienRazem();
+
+
         }
-
-        private void CalculateTaxes()
+        public void OdejmijTowar2(object sender, RoutedEventArgs e)
         {
-            ZUS = Math.Round(GrossAmount * 0.1371m, 2);
+            towar2--;
+            Towar2.Text = Convert.ToString(towar2);
 
-            decimal podstawaZdrowotna = GrossAmount - ZUS;
-            
-            Zdrowotna = Math.Round(podstawaZdrowotna * 0.09m, 2);
+            double res = towar2 * koszulka2;
+            res = Math.Round(res, 2);
 
-            decimal podstawaOpodatkowania = Math.Round(GrossAmount - ZUS - 250, 0); 
-            decimal podatekRaw = (podstawaOpodatkowania * 0.12m) - 300; 
-            PIT = Math.Max(0, Math.Round(podatekRaw, 0));
+            Cena2.Text = res + " zł";
 
-            NetAmount = GrossAmount - ZUS - Zdrowotna - PIT;
-        }
+            suma -= koszulka2;
+            ZmienRazem();
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+
         }
     }
 }
