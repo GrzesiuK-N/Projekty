@@ -1,0 +1,11 @@
+{
+    "lang":"pl-PL",
+    "data":{
+        "1.":"Moduły",
+        "1.1":"Kable",
+        "1.1.dsc":"Kable to moduł skadające się z od 3-6 <<Kablów>> %nl Musisz przeciąć dokładnie 1 <<Kabel>>, i ani jednego więcej",
+        "1.1.t1":"3 <<przewody>>:%nl nie ma %cb:red:czerwonych% <<przewodów>>, przetnij 2 <<przewód>> %nl W przeciwnym wypadku, jeżeli ostatni jest %cb:white:Biały%, przetnij go. %nl Jeżeli jest więcej niż 1 %cb:aqua:niebieskich% , przetnij ostatni %cb:aqua:niebieski% %nl w przeciwnym przypadku przetnij ostatni <<kabel>>",
+        "1.1.t2":"4 <<przewody>>:%nl Jeżeli wystjępuje więcej niż 1 %cb:red:czerwony% <<przewód>> i ostatnia cyfre <<Numeru Seryjnego>> jest nieparzysta, przetnij ostatni %cb:red:czerwony% przewód %nl "
+    }
+    
+}

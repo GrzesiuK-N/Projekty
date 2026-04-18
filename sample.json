@@ -1,0 +1,221 @@
+{
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "koFmWvbCzIgrdO_FFid84rxYiI8",
+    "nextPageToken": "EAAajgFQVDpDQVVpRUVOQlEwUkVORFkyUWpORlJERTFOalVvQVVqMjV1RDBpZUtFQTFBQldrVWlRMmxLVVZSSVRteFNWVWt3WlZSck5XUXdSbHBUTUhoU1UxVjRSV1ZxVGxkTk1qRkNZbFUxTVdKSWFHMVZWR3hXUldkM1NTMWtSMjF5ZDFsUk9FcFhjVEIzUlNJ",
+    "items": [
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "GjIRyBgFj5m-vYu2GizWw95hpFM",
+            "id": "UExzZUVCNHk5OXdBWUtMUUlMRHozVjNtQW1OdWx4ZlE5VS41NkI0NEY2RDEwNTU3Q0M2",
+            "snippet": {
+                "publishedAt": "2023-12-13T20:47:02Z",
+                "channelId": "UCcjC9FBF7taXPRKDIG8gI6Q",
+                "title": "Marek Grechuta – Dni, których nie znamy",
+                "description": "Teledysk z filmu „Obrazy i obrazki” (scen. M. Bobrowski, reż. W. Gawroński, TVP 1973).",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/89GtYMXRAzc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/89GtYMXRAzc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/89GtYMXRAzc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/89GtYMXRAzc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/89GtYMXRAzc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "DraMori",
+                "playlistId": "PLseEB4y99wAYKLQILDz3V3mAmNulxfQ9U",
+                "position": 0,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "89GtYMXRAzc"
+                },
+                "videoOwnerChannelTitle": "Xerdax",
+                "videoOwnerChannelId": "UCDC0d6-_UbFBLqdfKH4YIYQ"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "mdVjl4H_1pD9YQxj-fbdf_50klc",
+            "id": "UExzZUVCNHk5OXdBWUtMUUlMRHozVjNtQW1OdWx4ZlE5VS4yODlGNEE0NkRGMEEzMEQy",
+            "snippet": {
+                "publishedAt": "2023-12-13T20:47:32Z",
+                "channelId": "UCcjC9FBF7taXPRKDIG8gI6Q",
+                "title": "\"Płacz Jana pod Krzyżem\" - Schola Adonai",
+                "description": "„Płacz Jana pod Krzyżem” - Schola Adonai (Bogu Dźwięki 2019)\nPiotr Kurstak: słowa i muzyka, produkcja i kierownictwo muzyczne\nŁukasz Łukaszewicz: wokal\nSchola Adonai: chór\nMarek Kubik: fortepian, instrumenty klawiszowe oraz perkusyjne\nMariusz Łepkowski: perkusja\nŚP Karol Sypytkowski + : gitara basowa\nPiotr Kurstak: gitara elektryczna i akustyczna\n\nAranżacja: Piotr Kurstak i Marek Kubik\nRealizacja nagrań, mix i mastering: \nMarek Kubik WeM Studio i Studio Rembrandt Polskiego Radia Białystok\n\nScenariusz i reżyseria klipu: Piotr Kurstak\nOperatorzy kamer: \nRafał Kowalko i Tomasz Buczko (zdjęcia studyjne), Piotr Kurstak (zdjęcia z Ziemi Świętej)\nRealizacja i montaż: Rafał Kowalko Pracownia Filmowa FENIX (http://pracowniafenix.pl)\n\nKontakt (w sprawie płyty i muzyki):\nmuzycznapiwnicapk@gmail.com (Muzyczna Piwnica PK Piotr Kurstak)\nLink do słuchania naszej muzyki na portalach cyfrowych:\nhttps://fanlink.to/Adonai\n\nInformacje Bogu Dźwięki:\nwww.bogudzwieki.archibial.pl\nwww.facebook.com/BoguDzwieki\nwww.facebook.com/ScholaAdonaiBialystok\nemail: bogudzwieki@archibial.pl",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3mept50mDgY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3mept50mDgY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3mept50mDgY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "DraMori",
+                "playlistId": "PLseEB4y99wAYKLQILDz3V3mAmNulxfQ9U",
+                "position": 1,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "3mept50mDgY"
+                },
+                "videoOwnerChannelTitle": "Adonai",
+                "videoOwnerChannelId": "UCLFUJgaHTID2zFD-1g8mVhw"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "RDsfci27uHTkr4g6U-SE2p9dU9M",
+            "id": "UExzZUVCNHk5OXdBWUtMUUlMRHozVjNtQW1OdWx4ZlE5VS4wMTcyMDhGQUE4NTIzM0Y5",
+            "snippet": {
+                "publishedAt": "2023-12-13T20:48:00Z",
+                "channelId": "UCcjC9FBF7taXPRKDIG8gI6Q",
+                "title": "Hey There Cthulhu: The Photomontage Video [a Lovecraftian song]",
+                "description": "MP3 NOW AVAILABLE!: http://music.ebenbrooks.com/order.html or http://www.cdbaby.com/cd/ebenbrooks2\n\nHaving made a better audio recording of \"Hey There Cthulhu\" (http://www.youtube.com/watch?v=ut82TDjciSg) using a karaoke track of \"Hey There Delilah\" (from the album Karaoke Bash Vol. 3 (p) 2007 by Starlight Karaoke), I decided to do a photomontage-style video for it using artwork and photographs I've come across in my travels through these Intarwebs. So here it is!\n\nSign Up for the Newsletter: http://music.ebenbrooks.com/ (link on left)\nOrder CDs and other merch: http://music.ebenbrooks.com/order.html\nMusic and Activism Blog: http://ebenbrooks.livejournal.com/\n\nAll images copyright © by their respective creators. Credits available upon request.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/XxScTbIUvoA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/XxScTbIUvoA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/XxScTbIUvoA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "DraMori",
+                "playlistId": "PLseEB4y99wAYKLQILDz3V3mAmNulxfQ9U",
+                "position": 2,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "XxScTbIUvoA"
+                },
+                "videoOwnerChannelTitle": "Eben Brooks",
+                "videoOwnerChannelId": "UCaGWZE8owbjgd7n1iMJfy9Q"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "k4okOgxtEIgauIBSD08Of3TgIeg",
+            "id": "UExzZUVCNHk5OXdBWUtMUUlMRHozVjNtQW1OdWx4ZlE5VS41MjE1MkI0OTQ2QzJGNzNG",
+            "snippet": {
+                "publishedAt": "2023-12-13T20:48:18Z",
+                "channelId": "UCcjC9FBF7taXPRKDIG8gI6Q",
+                "title": "Toccata and Fugue in D Minor (Best Version Ever)",
+                "description": "Though the composition is public domain, the performance belongs to the record label that recorded the following performer (see YouTube's attributes in the full description):\nHannes Kästner\nAlbum: \nBach, J.S.: Organ Music - Preludes and Fugues - Toccata and Fugue in D Minor - Chorales Preludes. \n\nThis album was released in 1988 and it's also available on ITunes : \nhttps://itunes.apple.com/ca/album/bach-j-s-organ-music-preludes-fugues-toccata-fugue/id389168578",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ho9rZjlsyYY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ho9rZjlsyYY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ho9rZjlsyYY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/ho9rZjlsyYY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    }
+                },
+                "channelTitle": "DraMori",
+                "playlistId": "PLseEB4y99wAYKLQILDz3V3mAmNulxfQ9U",
+                "position": 3,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "ho9rZjlsyYY"
+                },
+                "videoOwnerChannelTitle": "MovieMongerHZ",
+                "videoOwnerChannelId": "UC34UEanXVzwLauDJwXjuntQ"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "PuNqapn6Qy5ocax7mYp9-vGvStY",
+            "id": "UExzZUVCNHk5OXdBWUtMUUlMRHozVjNtQW1OdWx4ZlE5VS4wOTA3OTZBNzVEMTUzOTMy",
+            "snippet": {
+                "publishedAt": "2023-12-13T20:49:38Z",
+                "channelId": "UCcjC9FBF7taXPRKDIG8gI6Q",
+                "title": "Primordial Shores (Bonus Track)",
+                "description": "Provided to YouTube by CDBaby\n\nPrimordial Shores (Bonus Track) · Thomas Happ\n\nAxiom Verge (Original Soundtrack)\n\n℗ 2015 Thomas Happ Games LLC\n\nReleased on: 2015-03-30\n\nAuto-generated by YouTube.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ry3Ufpz2HLg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ry3Ufpz2HLg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ry3Ufpz2HLg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/ry3Ufpz2HLg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/ry3Ufpz2HLg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "DraMori",
+                "playlistId": "PLseEB4y99wAYKLQILDz3V3mAmNulxfQ9U",
+                "position": 4,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "ry3Ufpz2HLg"
+                },
+                "videoOwnerChannelTitle": "Thomas Happ - Topic",
+                "videoOwnerChannelId": "UCfcFW0Zu76QFKknzHqlJmXg"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 114,
+        "resultsPerPage": 5
+    }
+}

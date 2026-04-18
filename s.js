@@ -1,0 +1,1 @@
+var $ = "Korea Południowa" // ta lepsza 
