@@ -1,25 +1,39 @@
 body {
-    background-color: rgb(144, 238, 144); /* kolor tla*/
+    background-color: aquamarine; /* kolor tla*/
+    background: url(pingwinek.jpg);
     margin: 50px;
-    font-size: 16pt;
-    font-family: comic sans ms;
+}
+article{
+    margin: 50px;   /* margines zewnetrzny*/
+    padding: 20px;   /* margines wewnetrzny*/
+    background-color: orangered;
+    /*
+    border-width: 5px;  - grubosc ramki
+    border-color: rgb(212, 242, 16);  - kolor ramki
+    border-style: double; - styl ramki
+    */
+    border: 5px double black; 
+}
+h1 {
+    color: green;
+    font-size: 30pt;          /* rozmiar czcionki*/
+    font-family:'Wingdings'   /* rodzaje czcionki*/
 }
 
-h1 {
-    color: rgb(0, 0, 0);
-    font-size: 30pt;          /* rozmiar czcionki*/
-    font-family: 'comic sans ms'; /* rodzaje czcionki*/
-   text-align: center;
+p {
+   text-align: justify;   /* wyrownanie czcionki*/
+   font-style: italic;    /* styl czcionki: pochylony*/
 }
 
 a {
+    color-size: 15pt;
     color: blueviolet
 }
 a:link{               /* link nieodwiedzony*/
     color: lightgreen;
 }
 a:visited{            /*link odwiedzony*/
-    color: rgb(255, 255, 255);
+    color: darkolivegreen;
 }
 a:hover{              /*po nacisnieciu myszki*/
     color: yellow;
@@ -29,41 +43,9 @@ a:active{             /*aktywny, w trakcie klikniecia*/
     color: blue;
 }
 
-/* font-variant: small-caps; - wariant czcionki:kapitaliki*/
-div{
-    width: 600px;
-    font-size: 20pt;
-    background-color: lightyellow;
-    border: 2px solid black;
-}
+/* font-variant: small-caps; */ - /*wariant czcionki:kapitaliki*/
 
 img {
     width: 400px;  /* szrokosc elementu*/
     height: 400px; /* wysokosc elementu*/
-    border-radius: 2px;
-    border: 2px solid rgb(40, 214, 13);
-    text-align: left;
-}
-
-nav {
-    background-color: darkgreen;
-}
-
-.pierwszy_poziom {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-
-ul {
-    list-style-type:none;
-    margin:0;
-    padding: 0;
-    }
-
-li {
-    list-style-type:lower-alpha;
-    width: 170px;
-    display: inline-block;
-    white-space: nowrap;
 }

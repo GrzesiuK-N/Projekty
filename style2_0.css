@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(173, 216, 230); /* kolor tla*/
+    margin: 50px;
+}
+
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    font-family:'Calibri' 
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+   
+}
+
+article {
+margin: 50px;   /* margines zewnetrzny*/
+    padding: 20px;   /* margines wewnetrzny*/
+    background-color: rgb(255, 255, 255);
+
+border: 5px solid black; 
+}
+
+p{
+  text-align: justify;
+}
+
+div {
+       width: 800px;
+       margin: auto;
+}
