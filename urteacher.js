@@ -1,1 +1,0 @@
-_=(i,n)=>{n>0?console.log("Utop się "+i)||_(i,n-1):_};_("Mikołaj",3)
