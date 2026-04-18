@@ -1,97 +1,46 @@
-<?php
+<?php 
+session_set_cookie_params([
+        'path' => '/echo/techniplayer/editor'
+]);
 session_start();
 
-if (isset($_SESSION['user_id'])) {
-    header("Location: secret.php");
-    exit();
-}
-
-$host = "localhost";
-$db_user = "root";
-$db_password = "";
-$db_name = "Arbuz";
-
-$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
-
-if ($polaczenie->connect_errno != 0) {
-    die("Błąd połączenia z bazą: " . $polaczenie->connect_error);
-}
-
-$wiadomosc_nie = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $login = $_POST['login'];
-    $haslo = $_POST['haslo'];
-
-    $zapytanie = "SELECT id, haslo FROM uzytkownicy WHERE login = ?";
-
-    if ($stmt = $polaczenie->prepare($zapytanie)) { 
-        $stmt->bind_param("s", $login);
-        $stmt->execute();
-        $wynik = $stmt->get_result();
-
-        if ($uzytkownik = $wynik->fetch_assoc()) {
-            if (password_verify($haslo, $uzytkownik['haslo'])) {
-                
-                $_SESSION['user_id'] = $uzytkownik['id'];
-                $_SESSION['login_timestamp'] = time();
-
-                header("Location: secret.php");
-                exit();
-
-            } else {
-                $wiadomosc_nie = "Nieprawidłowe hasło.";
-            }
-        } else {
-            $wiadomosc_nie = "Użytkownik o takim loginie nie jest zapisany na liście oczekujących.";
+if (isset($_SESSION['user_id'])){
+    header('Location: /echo/techniplayer/editor/user_panel.php');
+    die('');
+}else{
+    if (isset($_POST['username'])&&isset( $_POST['pwd'])){
+        $username = $_POST['username'];
+        $pwd = hash('sha256', $_POST['pwd'] . 's4l3tr4');
+        include_once('../../connect.php');
+        $user_result = mysqli_query($conn,"SELECT user_id,admin FROM tplayer2_users WHERE username = '$username' AND pwd = '$pwd'");
+        if(mysqli_num_rows($user_result) == 1){
+            $user_data = mysqli_fetch_assoc($user_result);
+            $_SESSION["username"] = $username;
+            $_SESSION["user_id"] = $user_data["user_id"];
+            $_SESSION["is_admin"] = $user_data["admin"];
+            header('Location: /echo/techniplayer/editor/user_panel.php');
+        }else{
+            die("wrong username or password!");
         }
-        $stmt->close();
     }
 }
-$polaczenie->close();
 ?>
-
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Logowanie</title>
-    <style>
-    .error { 
-    color: red; 
-    margin-bottom: 10px; }
-    .login-box { margin: 50px auto; 
-    width: 300px; 
-    padding: 20px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; }
-    input { 
-    display: block; 
-    width: 100%; 
-    margin-bottom: 10px; 
-    padding: 5px; 
-    box-sizing: border-box; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="editor.css">
 </head>
 <body>
-
-    <div class="login-box">
-        <h2>Zaloguj się</h2>
-
-        <form method="post" action="login.php">
-            <?php if ($wiadomosc_nie != ""): ?>
-                <div class="error"><?php echo $wiadomosc_nie; ?></div>
-            <?php endif; ?>
-
-            <label for="login">Login:</label>
-            <input type="text" name="login" id="login" required>
-
-            <label for="haslo">Hasło:</label>
-            <input type="password" name="haslo" id="haslo" required>
-
-            <button type="submit">Zaloguj się</button>
-        </form>
-    </div>
-
+    <form action="" method="post">
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"> <br>
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" id="pwd"> <br>
+        <button>Login</button>
+    </form>
 </body>
 </html>
