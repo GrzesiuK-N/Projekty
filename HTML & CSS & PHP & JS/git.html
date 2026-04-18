@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #container  div {
+          background-color: aqua;
+          font-size: 40pt;
+          padding: 30px;
+          text-align: center;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 200px auto 300px;
+           grid-template-areas: 
+           "header header header"
+           "menu article ad" 
+           "footer footer footer";
+            gap: 10px;
+        }
+
+        #container .header {
+            grid-area: header; /* nazwa rejonu siatki (grid)*/
+        }
+
+        #container .footer {
+            grid-area: footer; /* nazwa rejonu siatki (grid)*/
+        }
+
+        
+        #container .menu {
+            grid-area: menu; /* nazwa rejonu siatki (grid)*/
+        }
+
+
+        #container .article {
+            grid-area: article; /* nazwa rejonu siatki (grid)*/
+        }
+
+        #container .ad {
+            grid-area: ad; /* nazwa rejonu siatki (grid)*/
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+ <div class="header"> naglowek strony</div>
+ <div class="menu"> menu strony</div>
+ <div class="article"> tresc strony</div>
+ <div class="ad"> reklama strony</div>
+ <div class="footer"> stopka strony</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="https://dobraedukacja.edu.pl/echolokacja/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule book</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&family=Noto+Sans+Symbols:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap');
+        *{
+            font-family: 'Noto Sans','Noto Sans Symbols','Noto Sans Symbols 2','Noto Emoji';
+        }
+        h1{
+            font-size: x-large;
+        }
+        h2{
+            font-size: larger;
+        }
+        h3{
+            font-size: medium;
+        }
+        body{
+            width: 100%;
+            color:whitesmoke;
+            background-color: black;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px salmon solid;
+            padding:10px;
+        }
+        td{
+            margin:26px;
+            padding-left:10px;
+            border: 1px salmon dotted; 
+        }
+        code{
+            background-color: darkslategrey;
+            padding:3px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Księga Zasad</h1>
+    <h2 id="spis">0. Spis treść</h2> <br>
+    <a href="#spis">0. Spis treść {tu jesteś}</a> <br>
+    <a href="#basic">1. Zasady ogólne</a> w tym:
+    <li> 
+        <ol>
+            <a href="#basic/zasady">A Zasadach</a>
+        </ol>
+        <ol>
+            <a href="#basic/klucz">Słowa i ZNaki kllucz</a>
+        </ol>
+    </li>
+    <a href="#wymagania">Lista wymagań wraz z opisem</a> <br>
+    <a href="#znaki">Lista zasad znaków wraz z opisami</a> <br>
+    <a href="#omni">Lista zasad wszechobencnych</a>
+    <h2 id="basic">1. Podstawy</h2>
+    <h3 id="basic/zasady"> O Zasadach</p>
+        <p>
+            Zasady do wygania dotyczące haseł, wszystkie muszą się zgadzać aby przejść do następnego poziomu
+            <li>
+            <ol>
+                <code>⌬</code>Zasady znaków - Aplikują się gdy znak występuje w haślie
+            </ol>
+            <ol>
+                <code>🔑</code>Zasady wymagań - Są to wymagania podane w opisie poziomu
+            </ol>
+            <ol>
+                <code>ℵ</code> Zasady wszechobecne - Aplikują się zawsze
+            </ol>
+            </li>
+        </p>
+    <h3>o Słowach/Znakach klucz</h3>
+        <p>
+            Podczas opisywania zasad często będzie można zabaczyć słowa KLUCZ lub <code>ZNAKI</code> klucz które intepretowane są w danych sposób <br>
+            Mają one uprościć intepretacje zasad, parę zobaczyłeś już w akcji, bowiem znak <code>⌬</code> oznacza zasade znaku <br>
+            Tutaj znajduje się tabelka podstawowych słów i znaków KLUCZ:
+            <table>
+                <thead><th>słowa/znak klucz</th><th>znaczenie</th></thead>
+                <tr>
+                    <td><code>⌬</code></td>
+                    <td>Zasada Znaku</td>
+                </tr>
+                <tr>
+                    <td><code>🔑</code></td>
+                    <td>Zasada wymagań</td>
+                </tr>
+                <tr>
+                    <td>ℵ</td>
+                    <td>Zasada Ogólna</td>
+                </tr>
+                <tr>
+                    <td><code>🔠</code></td>
+                    <td>Dowolna duża litera alfabetu łacińskiego</td>
+                </tr>
+                <tr>
+                    <td><code>🔡</code></td>
+                    <td>Dowolna mała litera alfabetu łacińskiego</td>
+                </tr>
+                <tr>
+                    <td><code>|a|</code></td>
+                    <td>dowolna samogłoska</td>
+                </tr>
+                <tr>
+                    <td><code>|t|</code></td>
+                    <td>dowolna spółgłoska</td>
+                </tr>
+                <tr>
+                    <td><code> a &gt; b </code></td>
+                    <td>a występuje częsciej niż b</td>
+                </tr>
+                <tr>
+                    <td><code> a = b </code></td>
+                    <td>a występuje tyle razy lub jest takie samo co b</td>
+                </tr>
+                <tr>
+                    <td><code>a &lt; b</code></td>
+                    <td>a występuje mniej niż b</td>
+                </tr>
+            </table>
+        </p>
+   
+</body>
+</html>

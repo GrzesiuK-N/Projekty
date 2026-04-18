@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+    <script> 
+        window.onload = function() {
+            document.getElementById('bum').onclick = function() {
+                document.getElementById('komunikat').innerHTML = 'Wybuchlo!';
+                console.log('Wybuch nastopil i trwal 10 sekund');
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <button id="przycisk" onclick="alert('kliknieto przycisk! ok!') "> wcisnij mnie</button>
+    <button id="bum">pojaw sie </button>
+    <div id="komunikat"></div>
+    
+</body>
+</html>

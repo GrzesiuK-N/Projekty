@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sprawdzenie tabliczki mnożenia</title>
-<script src="mnozenie.js"></script>
-<link rel="stylesheet" href="mnozenie_wyglad.css">
+    <title>Tabliczka</title>
+    <script src="./tabliczka.js"></script>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr{
+            border-bottom: 1px solid salmon;
+        }
+        td{
+            border: 1px solid salmon;
+            width: 25px;
+            height: 25px;
+        }
+    </style>
 </head>
 <body>
-
-
-
+    
+    <table id="mnozenie">
+        <thead>
+        <tr><td>*</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></td></tr>
+        </thead>
+    </table>
 </body>
 </html>

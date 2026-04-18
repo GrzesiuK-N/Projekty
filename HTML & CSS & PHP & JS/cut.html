@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWU</title>
+</head>
+<body>
+    <textarea oninput="document.getElementById('res').innerHTML = this.value.length >180 ? this.value.substring(0,180) + '<-- twoja wiadomośc jest za długo tutaj się kończy.': 'ok'; document.getElementById('len').innerHTML = this.value.length;document.getElementById('res').style.color = this.value.length > 180 ? 'red' : 'lime' "></textarea><br>
+    długość:<span id="len"></span>
+    <span id="res"></span>
+</body>
+</html>

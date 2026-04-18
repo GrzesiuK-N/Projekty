@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pochwal się swoją błedną opinią!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" action="dodaj_opinie.php">
+        <textarea id="xyz" name="xyz">
+
+        </textarea>
+        <input type="range" name="op" id="op" min="1" max="5">
+        <input type="submit" value="Prześlij" onclick="if(document.getElementById('op').value==1){alert('błedna opinia')}">
+    </form>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrazek</title>
+    <style>
+
+      button:hover {
+        background-color: greenyellow;
+      }
+
+      button {
+        background-color: chartreuse;
+
+      }
+
+      article {
+        white-space: pre-line; 
+        font-family: comic sans ms;
+        size: 16px;
+      }
+
+      h2 {
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             color: deepskyblue;
+             font-size: 11px;
+      }
+
+      #tresc {
+            color: yellowgreen;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+
+        }
+        #tresc {
+            background-color: darkcyan;
+          transition: 2s ease;
+        }
+
+        #tresc:hover {
+           width: 400px;
+            height: 200px;
+            animation-name: ruch;
+            animation-duration: 5s;
+            rotate: -50deg;
+        }
+
+        @keyframes ruch {
+            0% {transform: translate(0,0)}
+            25% {transform: translate(200px,0)}
+            50% {transform: translate(200px,200px)}
+            75% {transform: translate(0,200px)}
+            85% {transform: translate(540px,200px)}
+            95% {transform: translate(540px,300px)}
+            100% {transform: translate(0,0)}
+        }
+
+        #slownik {
+            color: rgb(205, 202, 50);
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+
+        }
+        #slownik {
+            background-color: rgb(0, 139, 76);
+          transition: 2s ease;
+        }
+
+        #slownik:hover {
+           width: 400px;
+            height: 200px;
+            animation-name: wiencej_ruchu;
+            animation-duration: 5s;
+            rotate: 50deg;
+        }
+
+        @keyframes wiencej_ruchu {
+            0% {transform: translate(0,0)}
+            25% {transform: translate(190px,0)}
+            50% {transform: translate(190px,190px)}
+            75% {transform: translate(0,190px)}
+            85% {transform: translate(550px,190px)}
+            95% {transform: translate(550px,210px)}
+            100% {transform: translate(0,0)}
+        }
+
+    .progress-container {
+      width: 300px;
+      height: 25px;
+      border: 1px solid black;
+      background-color: rgb(52, 236, 89);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: green;
+      width: 0;
+      animation: load 5s linear infinite;
+    }
+
+    @keyframes load {
+      0%   { width: 0; }
+      50%  { width: 100%; }
+      100% { width: 0; }
+    }
+
+    body {
+        background-color: ivory;
+    }
+
+    </style>
+</head>
+<body>
+         <h2>Dzien doberek</h2>
+      
+          <button type="button"> <a href="https://www.google.pl/?hl=pl"> Kliknij i zobacz </a></button> <br><br><br>
+          <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+          <article>
+            Tłumaczenie z języka angielskiego-Supraland to gra wideo w stylu Metroidvania opracowana przez Supra Games.
+             Gra została pierwotnie wydana samodzielnie na komputery PC i opuściła wcześniejszy dostęp 5 kwietnia 2019 r.
+              Porty dla ósmej generacji konsol do gier wideo, których wydawcą jest Humble Games, zostały wydane 22 października 2020 r.
+
+          </article>
+
+          <div id="tresc"> kreciolek </div>
+          <div id="slownik"> kreciolek2.0</div>
+
+
+</body>
+</html>

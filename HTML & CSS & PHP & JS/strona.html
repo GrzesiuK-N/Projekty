@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title> JavaScript </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styl.css"> 
+
+	</head>
+	<body>
+		<h1>JavaScript</h1>
+		<div id="main">
+			<p><b><i>JavaScript może działać zarówno po stronie przeglądarki jak i serwera.<br>
+			Dziś jednak zajmiemy się tylko tą pierwszą wersją.</i></b></p>
+			<hr>
+			<h2>1.</h2>
+			<p>Sprawimy, by poniższy przycisk wywołał pojawienie się komunikatu (alert).</p>
+			
+			<button id="przycisk1" onclick="alert('42')">Kliknij mnie!</button>
+			
+			<hr>
+			
+			<h2>2.</h2>
+			<p>Drugi przycisk spowoduje zmianę tekstu poniżej</p>
+			
+			<button id="przycisk2" onclick="document.getElementById('tekst2').innerHTML = 'wesoło mi :)'">Kliknij mnie!</button>
+			<br><br>
+			<div id="tekst2"> smutno mi :(</div>
+			
+			<hr>			
+			
+			<h2>3.</h2>
+			<p>Weźmiemy teraz wartość z pola input i przeliczymy ją. Wynik zapiszemy w polu &lt;div&gt; o id "zlotowki".</p>
+			
+			dolary: <input type="number" id="dolary" oninput="document.getElementById('zlotowki').innerHTML=(this.value)*3.94 + 'zł'">
+			<br><br>
+			<div id="zlotowki">0 zł</div><br>
+			
+			<hr>
+			
+			<h2>4.</h2>
+			<p>Zmienimy styl elementu niżej - color czcionki i wielkość.</p>
+			
+			<button id="zmiana" onclick="(document.getElementById('stylowytekst').style.fontSize = '32px') ; (document.getElementById('stylowytekst').style.color = 'red')">Zmień!</button>
+			<div id="stylowytekst">
+			To be or not to be
+			</div>
+			
+			<hr>
+			
+			<h2>5.</h2>
+			<p>Poniżej znajduje się &lt;div&gt; o id "flaga" wewnątrz którego są dwa inne tagi &lt;div&gt;. Sprawimy, aby po najechaniu myszką na &lt;div&gt; z id "flaga" kolory wewnętrznych divów zmieniły się na biały i czerwony, a po wyjechaniu myszką - by wróciły do szarego i niebieskiego.</p>
+			
+			<div id="flaga" onpointerover="this.children[0].style.backgroundColor = 'white'; this.children[1].style.backgroundColor = 'red'" onpointerleave="this.children[0].style.backgroundColor = 'gray'; this.children[1].style.backgroundColor = 'blue'">
+				<div id="pasek1"></div>
+				<div id="pasek2"></div>
+			</div>
+
+			<hr>
+			
+			<h2>6.</h2>
+			<p>Poniżej znajdują się cztery grafiki. Sprawimy, aby po kliknięciu na daną grafikę dodawała się odpowiednia klasa CSS żywiołu (air, earth, fire, water).</p>
+			
+			<div id="elements">
+				<img id="e1" src="https://www.heroes7.acidcave.net/sphinx/PIC_creature_neutral_airelemental.png" onclick="this.classList.add('air')">
+				<img id="e2" src="https://www.heroes7.acidcave.net/sphinx/PIC_creature_neutral_earthelemental.png" onclick="this.classList.add('earth')">
+				<img id="e3" src="https://www.heroes7.acidcave.net/sphinx/PIC_creature_neutral_fireelemental.png" onclick="this.classList.add('fire')">
+				<img id="e4" src="https://www.heroes7.acidcave.net/sphinx/PIC_creature_neutral_waterelemental.png" onclick="this.classList.add('water')">
+			</div>
+			
+			<hr>
+			
+			<h2>7.</h2>
+			<p>Wyświetlimy teraz datę w polu poniżej</p>
+				<button id="przycisk3" onclick="data = new Date ; document.getElementById('dzisiaj').innerHTML=data.toLocaleDateString('pl-PL')">Wyświetl datę!</button>
+			<br><br>		
+			<div id="dzisiaj">brak danych</div>
+			
+			<hr>
+			
+			<h2>8.</h2>
+			<p>Zrobimy teraz działający zegar. Co sekundę zadziała aktualizacja skryptu, pobierająca i wyświetlająca godzinę, minuty i sekundy.</p>
+			
+			<div id="zegar" >
+				HH:MM:SS
+			</div>
+            <script>setInterval(() => {document.getElementById('zegar').innerHTML = new Date().toLocaleTimeString('pl-PL')}, 1000)</script>
+			<hr>
+		</div>
+	</body>
+</html>

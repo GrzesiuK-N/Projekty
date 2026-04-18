@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pole trapezu</title>
+</head>
+<body>
+  <h1>Obliczanie pola trapezu</h1>
+  <label for="a">a [cm]:</label>
+  <input type="number" id="a" step="any"><br><br>
+
+  <label for="b">b [cm]:</label>
+  <input type="number" id="b" step="any"><br><br>
+
+  <label for="h">h [cm]:</label>
+  <input type="number" id="h" step="any"><br><br>
+
+  <button onclick="obliczPole()">Oblicz</button>
+   
+  <p>Pole [cm<sup>2</sup>]: <span id="wynik"></span></p>
+
+  <script>
+    function obliczPole() {
+
+      const a = parseFloat(document.getElementById('a').value);
+      const b = parseFloat(document.getElementById('b').value);
+      const h = parseFloat(document.getElementById('h').value);
+
+      const pole = ((a + b) * h) / 2;
+
+      document.getElementById('wynik').textContent = pole;
+    }
+  </script>
+</body>
+</html>

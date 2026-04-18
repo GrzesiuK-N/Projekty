@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="preload stylesheet" href="style.css" as="style" type="text/css" crossorigin="anonymous">
+    <script>
+        gameset = ["🦀","🦈","🪸","Δ","☉","Ω","☭","λ","🦎","🜠"]
+        play = []
+        last = -1;
+        window.onload = () =>{
+            r  = [...gameset]
+            r2 = [...gameset]
+            first = false;
+            wait = false
+            time = 0
+            r.push(...r)
+            console.log(r)
+            document.getElementById("elemnts").innerHTML = r2.join("")
+            var gl;
+            for (const card of document.getElementsByClassName('card')) {
+                key = Math.round(Math.random()*(r.length-1))
+                sym = r[key];
+                r.indexOf(sym);
+                r.splice(key,1);
+                card.lock = false
+                card.setAttribute('symbol',sym)
+                card.onclick = (e) => {
+                    if(!first){
+                        first=true;
+                        document.getElementById('czas').innerHTML = "0"
+                        gl = setInterval(()=>{time+=1;document.getElementById('czas').innerHTML=time;
+                        if(time>=120){ wait=true;clearInterval(gl);document.getElementById("wynik").innerHTML="przegrana"
+                            for (const card of document.getElementsByClassName('card')) {
+                                card.innerHTML = card.attributes.symbol.value;
+                                if(card.lock){
+                                    card.style.color='lime';
+                                }
+                            }
+                        }},1000)
+                    }
+                    if(wait|card.lock){return}
+                    if(play.length<1){
+                        card.innerHTML = card.attributes.symbol.value;
+                        play.push(card.attributes.symbol.value)
+                        last = card;
+                    }else if((play.length==1)&&(last!=card)){
+                        wait=true
+                        card.innerHTML = card.attributes.symbol.value;
+                        last = last;
+                        if (play[0]==card.attributes.symbol.value){
+                            last.lock = true;
+                            card.lock = true;
+                            r2=r2.filter((s)=>card.attributes.symbol.value!=s)
+                            document.getElementById("elemnts").innerHTML = r2.join("")
+                            wait=false;play=[];last=-1;
+                            if(r2.length==0){
+                                document.getElementById("wynik").innerHTML = "Wygrana!"
+                                clearInterval(gl);
+                            }
+                        }else{
+                            t = setTimeout(()=>{console.log(card,last);last.innerHTML = "";card.innerHTML="";wait=false;play=[];last=-1},1000)
+                        }
+
+                    }
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Memory</h1>
+    czas:<span id="czas"></span> z 120;
+    elementy gry: <span id="elemnts"></span> <br>
+    <span id="wynik"></span>
+    <div id="game">
+        <div class="row">
+            <div class="card" id="11"></div>
+            <div class="card" id="12"></div>
+            <div class="card" id="13"></div>
+            <div class="card" id="14"></div>
+            <div class="card" id="15"></div>
+        </div>
+        <div class="row">
+            <div class="card" id="21"></div>
+            <div class="card" id="22"></div>
+            <div class="card" id="23"></div>
+            <div class="card" id="24"></div>
+            <div class="card" id="25"></div>
+        </div>
+        <div class="row">
+            <div class="card" id="31"></div>
+            <div class="card" id="32"></div>
+            <div class="card" id="33"></div>
+            <div class="card" id="34"></div>
+            <div class="card" id="35"></div>
+        </div>
+        <div class="row">
+            <div class="card" id="41"></div>
+            <div class="card" id="42"></div>
+            <div class="card" id="43"></div>
+            <div class="card" id="44"></div>
+            <div class="card" id="45"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacje</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #tresc {
+            background-color: yellowgreen;
+            text-align: center;
+            padding: 20px;
+            font-size: 20pt;
+            font-family: comic sans ms;
+
+          /*  transition: height 2s ease 0s, width 2s ease 0s; */
+        }
+        #tresc {
+            background-color: darkcyan;
+          transition: 2s ease;
+        }
+          /* tranzycja - dla wysokosci i szrokosci */
+
+        #tresc:hover {
+           width: 400px;
+            height: 200px;/* 
+            transform: rotateY(180deg);
+            transform: skew(20deg) */
+            animation-name: ruch;
+            animation-duration: 4s;
+            /*
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite; */
+        }
+
+        @keyframes ruch {
+            0% {transform: translate(0,0)}
+            25% {transform: translate(200px,0)}
+            50% {transform: translate(200px,200px)}
+            75% {transform: translate(0,200px)}
+            100% {transform: translate(0,0)}
+        }
+    </style>
+</head>
+<body>
+    <div id="tresc"> My, dzieci z dworca Zoo </div>
+</body>
+</html>

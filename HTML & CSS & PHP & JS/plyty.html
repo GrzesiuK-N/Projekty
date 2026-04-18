@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Płyta</title>
+    <script>
+        window.onload = ()=>{
+            ld=document.getElementById('liczba_danych');
+
+            ld.oninput = ()=>{
+                document.getElementById('liczba').innerHTML = ld.value
+            }
+            document.getElementById('nagraj').onclick = ()=>{
+                rodzaj = document.getElementById("rodzaj_plyty").value;
+                ilosc  = document.getElementById("liczba_danych").value;
+                data = document.getElementById("data").value;
+                document.getElementById('wynik').innerHTML = `Nagrywa płyte: ${rodzaj};<br>liczba danych: ${ilosc}MB <br> data: ${data}`
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    Rodzaj: <select id="rodzaj_plyty">
+        <option value="CD">CD</option>
+        <option value="DVD">DVD</option>
+        <option value="Blue-ray">Blue-ray</option>
+        <option value="chodnikowa">chodnikowa</option>
+    </select> <br>
+    liczba danych: <input type="range" name="" id="liczba_danych" min="0" max="700"> <span id="liczba">0</span> <br>
+    Data: <input type="date" name="" id="data" value="2025-06-03"> <br>
+    <button id="nagraj">Nagraj</button>
+
+    <p id="wynik"></p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            display: table-cell;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            margin-top: 5px;
+        }
+        input{
+            height: 50px;
+            font-size: 35px;
+            text-align: right;
+        }
+    </style>
+    <script>
+        functions = {
+            '²':(e)=>(e**2),
+            '√':Math.sqrt,
+            'CE':(e)=>(0),
+            '-':(a,b)=>(a-b),
+            '+':(a,b)=>(a+b),
+            '*':(a,b)=>(a*b),
+            "/":(a,b)=>(a/b),
+            "!":(a)=>(a<=1 ? 1 : a*functions['!'](a-1)),
+            "?":(a)=>(a<=1 ? a : Math.floor((a*(a+1))/2)),
+            "%":(a,b)=>(a%b),
+            "↑↑":(a,b)=>(b==0 ? 1 : Math.pow(a,functions['↑↑'](a,b-1)))
+
+        }
+        window.onload = () => {
+            window.a = 0;
+            window.operation = (e)=>e;
+            [...document.getElementsByTagName("button")].forEach(
+                (e) => {
+                    if ('mo' in e.attributes){
+                        let f = functions[e.innerHTML]
+                        console.log(f)
+                        e.onclick = function(){document.getElementById('val').value = f(+document.getElementById('val').value)}
+                    }
+                    if ('bi' in e.attributes){
+                        let f = functions[e.innerHTML]
+                        e.onclick = function(){window.operation = f;window.a = +document.getElementById('val').value;document.getElementById('val').value=0}
+                    }
+                }
+            )
+        }
+    </script>
+</head>
+<body>
+    <input id='val' type="number" style="width:230px;">
+    <div style="padding:0px;display: grid; grid-template-columns: 25% 25% 25% 25%;width: 250px;">
+        <button bi>+</button> <button bi>-</button><button bi>*</button><button bi>/</button>
+        <button mo>!</button> <button mo>?</button> <button mo>%</button> <button bi>↑↑</button>
+        <button mo>²</button> <button mo>√</button> <button mo>CE</button> <button onclick="v=document.getElementById('val').value;document.getElementById('val').value = window.operation(+window.a,+v);window.a=0;window.operation = (e)=>e">=</button> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./poker.js"></script>
+        <title>Poker</title>
+        <style>
+            body{
+                background-image: url('./assets/poker.svg');
+                background-color: black;
+                background-size: 100px;
+                background-position-x: 4px;
+                background-position-y: 4px;
+                background-attachment: fixed;
+                background-repeat: round(1/120);
+                color: white;
+                font-size: 25px;
+                margin: 25px;
+
+                width: 95%;
+            }
+            body *{
+                left:100px;
+            }
+            div{
+                margin:auto;
+                left:50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="karta"></div> <br>
+            Karta:<input type="number" id="rodz" max="10" min="2" pattern="[1-9]|\1\0"> <button id="wys">wyświetl</button>
+        </div>
+    </body>
+</html>

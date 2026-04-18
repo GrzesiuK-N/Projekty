@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Magic of Dates</title>
+<style>
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<p>Welcome, everypony! Let's unveil the secrets of time.</p>
+<button id="magicButton">Reveal the Date!</button>
+<br><br>
+<div id="timeTravel" class="hidden">Date yet to be discovered...</div>
+
+<script>
+document.getElementById('magicButton').addEventListener('click', function() {
+    var timeSpell = new Date().toLocaleDateString('en-US');
+    var dateSpell = timeSpell.split('/').reverse().join('-');
+
+    document.getElementById('timeTravel').textContent = dateSpell;
+    document.getElementById('timeTravel').classList.remove('hidden');
+});
+</script>
+
+</body>
+</html>

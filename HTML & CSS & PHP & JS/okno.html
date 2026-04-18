@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+        background-color: rgb(86, 11, 176);
+        font-family: comic sans ms;
+        font-size: 15px;
+     }
+
+     section {
+        display: flex;
+        flex-wrap:wrap;
+     }
+
+     #lewa {
+        width: 200px;
+        background-color: royalblue;
+    border: 2px solid rgb(231, 10, 10) ;
+    padding: 20px;
+    margin: 20px;
+     }
+     
+     #srodek {
+        background-color: cornflowerblue;
+        padding: 20px;
+        margin: auto 20px;
+        border: 2px solid black ;
+        white-space: pre-line;
+        max-width: 720px ;
+        min-width: 400px;
+     }
+
+     #prawo {
+        width: 200px;
+        background-color: royalblue;
+    border: 2px solid rgb(10, 231, 10) ;
+    padding: 20px;
+    margin: 20px;
+     }
+
+     @media only screen and (max-width: 800px) {
+        #lewo, #prawo {
+            width: auto;
+            max-width: 720px;
+            min-width: 400px;
+            margin: 20px auto;
+            flex: 100%;
+        }
+     }
+
+     @media only screen and (max-width: 1300px) {
+     #prawo {
+            width: auto;
+            max-width: 1040px;
+            min-width: 400px;
+            margin: 20px auto;
+            flex: 100%;
+        }
+        #lewo {
+
+        }
+     }
+
+    </style>
+</head>
+<body>
+    <section>
+    <div id="lewa">Reklama: Ziemniak: klawiatura onion</div>
+    <div id="srodek">
+        <h1>Sport </h1>
+            <p>Sport – wszelkie formy aktywności fizycznej, które przez uczestnictwo doraźne lub zorganizowane wpływają na wypracowanie lub poprawienie kondycji fizycznej i psychicznej, rozwój stosunków społecznych lub osiągnięcie wyników sportowych na wszelkich poziomach[1][2].
+
+                Za sport uważa się również współzawodnictwo oparte na aktywności intelektualnej, którego celem jest osiągnięcie wyniku sportowego.
+                
+                Rodzaje sportu:
+                
+                sport amatorski – aktywność fizyczna podejmowana dla wypoczynku, rozrywki i rekreacji – odnowy sił psychofizycznych,
+                sport wyczynowy – forma działalności człowieka, podejmowana dobrowolnie w drodze rywalizacji dla uzyskania maksymalnych wyników sportowych,
+                sport profesjonalny – rodzaj sportu wyczynowego uprawianego w celach zarobkowych
+                motorsport - sport rozumiany jako rywalizacja zawodników na pojazdach silnikowych.
+                W ramach rekreacji, rozumianej tu jako odrębne pojęcie, brak jest elementu rywalizacji. Różne realizowane w jej ramach czynności, poza pracą czy nauką, są wykonywane w miejscu zamieszkania czy pobytu, co różni ją z kolei od turystyki – podróży w celu poznawania świata i ludzi.
+                
+                W niektórych ujęciach sport to również kultura fizyczna, dbanie o własne ciało, podziwianie piękna zawodników uprawiających dane dyscypliny sportu.</p>
+    </div>
+    <div id="prawo">Inne coś</div>
+</section>
+</body>
+</html>
