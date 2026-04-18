@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<title> Menu </title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+        <style>
+            ul{
+        list-style-type:none;
+        margin:0;
+        padding: 0;
+        }
+
+    li {
+        width: 170px;
+        display: inline-block;
+        float: left;
+        white-space: nowrap;
+    }
+
+    li a{
+        width: 170px;
+        display:block;
+        background-color: chartreuse;
+        float: left;
+        text-align: center;
+    }
+
+    li a:visited,li a:link {
+        background-color: darkgreen;
+        width: 170PX;
+        text-decoration: none;
+        padding: 5px;
+        border: 2px outset rgb(0, 0, 0);
+    }
+
+    li a:hover, li a:active {
+        background-color: crimson;
+        border: 2px inset black;
+        padding: 5px 0px 5px 10px;
+    }
+
+    .pierwszy_poziom li{
+      position: relative;
+    }
+
+    .pierwszy_poziom  .poziom_drugi{
+        display: none;
+        position: absolute;
+        top: 30px;
+        width: 170px;
+    }
+
+    li:hover  .poziom_drugi{
+        display: block;
+    }
+
+    article{
+        margin-top: 50px;
+        clear: both; /* koniec działania float*/
+        font-size: 20pt;
+        font-family: comic sans ms;
+    }
+
+    .pierwszy_poziom {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+
+    img{
+        position: relative;
+        width: 250px;
+        height: 300px;
+    }
+
+        </style>
+	</head>
+	<body>
+		<nav>
+		<ul class="pierwszy_poziom" id="mainmenu">
+			<li>
+				<a href="https://www.google.pl/?hl=pl"> Google </a>
+				<ul class="poziom_drugi">
+					<li> <a href="https://maps.google.com/">Mapy</a> </li>
+					<li> <a href="https://images.google.com/?hl=pl">Grafika</a> </li>
+					<li> <a href="https://workspace.google.com/intl/pl/products/docs/">Dokumenty</a> </li>
+				</ul>
+			</li>			
+			<li>
+                <a href="https://www.onet.pl/"> Onet </a>
+                <ul class="poziom_drugi">
+                    <li> <a href="https://wiadomosci.onet.pl/">Wiadomości</a> </li>
+					<li> <a href="https://konto.onet.pl/signin?client_id=poczta.onet.pl.front.onetapi.pl">onet poczta</a> </li>
+					<li> <a href="https://przegladsportowy.onet.pl/">sport</a> </li>
+                </ul>
+			<li>
+                <a href="https://www.wp.pl/"> Wirtualna Polska </a>
+                <ul class="poziom_drugi">
+                    <li> <a href="https://wiadomosci.wp.pl/najnowsze">Najnowsze</a> </li>
+					<li> <a href="https://poczta.wp.pl/login/login.html">poczta</a> </li>
+					<li> <a href="https://wiadomosci.wp.pl/">Wiadomości</a> </li>
+                </ul>
+			<li>
+                <a href="https://www.youtube.com/"> YouTube </a>
+                <ul class="poziom_drugi">
+                    <li> <a href="https://www.youtube.com/user/YouTube">channel</a> </li>
+					<li> <a href="https://music.youtube.com/">music</a> </li>
+					<li> <a href="https://www.youtube.com/user/YouTube/videos">videos</a> </li>
+                </ul>
+                <ul class="trzeci poziom">
+                <li> <a href=""> </a> </li>
+            </ul>
+		</ul>
+		
+		</nav>
+		<h1>Portale Internetowe</h1>
+		<article>
+			<img src="icon-portal.png">Portal internetowy – internetowy serwis informacyjny poszerzony o różnorodne funkcje internetowe, udostępniony pod jednym adresem internetowym. W intencji twórców ma to zachęcać użytkowników do ustawienia adresu portalu jako strony startowej w przeglądarce WWW i traktowania go jako bramy do Internetu.
+
+			Zazwyczaj portal zawiera informacje będące przedmiotem zainteresowania szerokiego grona odbiorców. Jako przykładową treść portalu można podać: dział aktualnych wiadomości, prognoza pogody, katalog stron WWW, czat, forum dyskusyjne oraz mechanizmy wyszukiwania informacji w nim samym lub w zewnętrznych zasobach Internetu (wyszukiwarki internetowe). Ponadto portale mogą oferować darmowe usługi np. poczty elektronicznej, hostingu.
+
+			Określenie „portal” bywa stosowane jako synonimu serwisu internetowego, choć nie jest to ścisłe, gdyż mogą istnieć portale bez serwisu informacyjnego, np. portale publicystyczne.
+
+			Portale internetowe zarabiają tylko dzięki udostępnianiu banerów reklamowych i kierowaniu użytkowników zasobów Web do właściwych miejsc komercyjnych, zwiększając obroty handlowe. W tym momencie portale nie są tylko łącznikiem z treścią, ale oferują dostęp do zasobów online i zawierają szeroki wachlarz usług.
+		</article>
+	</body>
+	
+</html>

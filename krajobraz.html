@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #góry {
+            position: absolute;
+            z-index: 40; /* określa co na wierzchu - im większy, tym bardziej na wierzchu UWAGA: */
+        }
+        #lodowiec {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            opacity: 0.9;
+            z-index: 30;
+        }
+
+        #dzungla {
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            opacity: 90%;
+            z-index: 20;
+        }
+
+        #las {
+            margin-top: 400px;
+            vertical-align: sub; /*ustawienie elementu w pionie*/
+        }
+
+        #las2 {
+           float: left;
+        }
+
+        div {
+           clear: both; /*anulowanie opływania (float)*/
+           background-color: blueviolet;
+           width: 30px;
+           height: 30px;
+           display: inline-block;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: cadetblue;
+            font-family: comic sans ms;
+            font-size: 15pt;
+        }
+    </style>
+    <title>orzeł</title>
+</head>
+<body>
+    <img id="góry" src="krajobraz1.jpg" alt="góry">
+    <img id="lodowiec" src="krajobraz2.jpg" alt="lodowiec">
+    <img id="dzungla" src="krajobraz4.jpg" alt="dzungla">
+    <br><br><br><br>
+    
+    <img id="las" src="Shadowrath_sw3.png" >tu jest tekst opisujący las
+    <br><Br>
+    <img id="las2" src="Shadowrath_sw3.png" >tu jest tekst opisujący las w drugiej części kontynetu polski Jest 
+    to piąty film należący do franczyzy DC Extended Universe. Światowa premiera miała miejsce 26 października 2017 roku w Pekinie.
+     Koszt produkcji filmu ... <br>
+     <div></div>
+     <img id="las3" src="Shadowrath_sw3.png" >
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+</head>
+<body>
+    <h1>Rejestracja</h1>
+
+    <form method="post" action="" >
+  
+        imie: <input type="text" name="imie"> <br> <br>
+        nazwisko: <input type="text" name="nazwisko"> <br> <br>
+        e-mail: <input type="email" name="mail"> <br> <br>
+        date_urodzenia: <input type="date" name="data_ur"> <br> <br>
+        wzrost: <input type="number" min="150" max="340" name="wzrost"> <br> <br>
+        masa: <input type="weight" min="50" max="600" name="masa"> <br> <br>
+        wiek: <input type="number" name="wiek"> <br> <br>
+        telefon: <input type="tel" id="realme" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"> <br> <br>
+        kolor oczu: <input type="color" name="kolor"> <br> <br>
+        jak sie czujesz: zle <input type="range" name="nastroj" min="1" max="100"> dobrze <br> <br>
+        cos o sobie: <textarea name="o_sobie" rows="4" cols="50"></textarea> <br> <br>
+    <fieldset>
+        <legend>plec: </legend><br> 
+        <input type="radio" name="plec" value="K" id="K"> <label for="K"> Kobieta </label><br>
+        <input type="radio" name="plec" value="M" id="M"> <label for="M"> Meszczyzna </label><br>
+        <input type="radio" name="plec" value="N" id="N"> <label for="N"> niebinarna </label><br>
+        <input type="radio" name="plec" value="I" id="I"> <label for="I"> inna/ nie chce podac </label><br>
+    </fieldset>
+        <br>
+          razmiar ubrania: 
+          <select name="rozmiar">
+             <option value="XS">Bardzo Maly</option>
+             <option value="S"> Maly</option>
+             <option value="M">sredni</option>
+             <option value="L">duzy</option>
+             <option value="XL">Bardzo duzy</option>
+             <option value="XXL">Ogromny</option>
+          </select> <br> <br>
+
+          Wyslij plik z cv:
+          <input type="file" name="wybierz plik"><br><br>
+
+          nie zgadzam sie na regulamin: <input type="checkbox" name="nie zgoda"> <br> <br>
+
+          <input type="hidden" name="kod prawdy" value="XYZ1024"><br><br>
+
+          <input type="button" name="przycisk" value="nie wciskaj mnie prosze"><br><br>
+
+            <button>lubiany przycisk</button><br><br>
+
+        <input type="submit" value="Wyslij to nie oszustwo!!!">
+        <input type="reset" value="resetuj tylko nie to???">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<title> cz2 </title>
+		<link rel="stylesheet" href="ddos.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+        <h1>opis dalsza część</h1>
+		<article>
+			<img src="opis2.jpg">Jak chronić się przed atakami DDoS?
+            Ataki DDoS stanowią poważne wyzwanie dla organizacji, które prowadzą działalność w internecie. Skuteczna ochrona przed nimi wymaga zastosowania zróżnicowanych strategii oraz inwestycji w odpowiednie technologie. Poniżej przedstawiam najważniejsze metody ochrony i radzenia sobie z atakami DDoS.
+            
+            1. Monitorowanie ruchu sieciowego
+            Pierwszym krokiem w ochronie przed atakami DDoS jest stałe monitorowanie ruchu sieciowego. Kluczowe jest zrozumienie normalnych wzorców ruchu, aby móc szybko wykryć anomalie, takie jak:
+            
+            Niezwykle duży wzrost liczby żądań w krótkim czasie.
+            Nietypowe źródła ruchu (np. wiele żądań z jednego adresu IP lub z nietypowych lokalizacji geograficznych).
+            Nietypowe żądania aplikacyjne, takie jak żądania HTTP o dużej złożoności.
+            Zaawansowane systemy monitoringu, takie jak SIEM (Security Information and Event Management), pomagają analizować dane w czasie rzeczywistym i generować alerty w przypadku podejrzanej aktywności.
+            
+            2. Użycie sieci CDN i rozproszenie infrastruktury
+            Sieci dostarczania treści (CDN, ang. Content Delivery Network) są jedną z najskuteczniejszych metod obrony przed atakami DDoS. CDN rozkłada ruch na wiele serwerów w różnych lokalizacjach geograficznych, dzięki czemu:
+            
+            Trudniej jest przeciążyć jeden konkretny serwer.
+            Ataki wolumetryczne są rozpraszane na większą liczbę węzłów, co znacznie zmniejsza ich skuteczność.
+            Dodatkowo, rozproszona infrastruktura, taka jak usługi w chmurze, pozwala na dynamiczne zwiększanie dostępnych zasobów (np. przepustowości lub mocy obliczeniowej) w przypadku wzmożonego ruchu.
+            
+            3. Ustawienia zapór sieciowych i ochrony przed atakami na poziomie aplikacji
+            Zapory sieciowe (firewalle) oraz rozwiązania WAF (Web Application Firewall) to kluczowe narzędzia w walce z DDoS.
+            
+            Firewalle pozwalają blokować ruch z podejrzanych adresów IP lub całych regionów, które nie powinny mieć dostępu do usługi.
+            WAF chroni przed atakami na poziomie aplikacji, analizując żądania HTTP i blokując te, które są uznane za złośliwe. Na przykład, WAF może wykrywać próby ataku typu Slowloris lub HTTP Flood.
+            4. Automatyczne wykrywanie i filtrowanie ruchu
+            Zaawansowane systemy filtrowania ruchu, często oparte na sztucznej inteligencji i uczeniu maszynowym, są w stanie:
+            
+            Rozróżnić legalny ruch użytkowników od ruchu generowanego przez boty.
+            Blokować złośliwy ruch na podstawie charakterystyki ataku, np. dużej liczby identycznych żądań z krótkim odstępem czasu.
+            Popularnym podejściem jest korzystanie z usług ochrony DDoS oferowanych przez dostawców, takich jak Cloudflare, Akamai czy AWS Shield. Systemy te są zaprojektowane do automatycznego przechwytywania i neutralizowania ataków w czasie rzeczywistym.
+            
+            5. Mechanizmy ograniczania żądań (Rate Limiting)
+            Ograniczanie liczby żądań (ang. Rate Limiting) to skuteczna technika, która zapobiega przeciążeniu serwera przez zbyt duży ruch. Dzięki niej można ustawić limity dotyczące:
+            
+            Liczby żądań z jednego adresu IP w określonym czasie.
+            Maksymalnej liczby równoczesnych połączeń do serwera.
+            Wprowadzenie takich ograniczeń sprawia, że nawet w przypadku ataku serwer pozostaje dostępny dla większości użytkowników.
+            
+            6. Segmentacja i redundancja sieci
+            Segmentacja sieci polega na podzieleniu infrastruktury na mniejsze części, które działają niezależnie od siebie. W przypadku ataku na jedną część, pozostałe segmenty nadal funkcjonują.
+            Redundancja sieci z kolei oznacza posiadanie zapasowych serwerów i łączy, które można szybko uruchomić w sytuacji awaryjnej.
+            
+            7. Testowanie odporności (pentesty i symulacje DDoS)
+            Regularne testy bezpieczeństwa, takie jak symulacje ataków DDoS, pomagają sprawdzić, jak dobrze system jest przygotowany na potencjalne zagrożenia. Testy te pozwalają zidentyfikować słabe punkty w infrastrukturze oraz zoptymalizować mechanizmy obronne.
+            
+            8. Edukacja i świadomość pracowników
+            Ochrona przed atakami DDoS nie kończy się na technologii. Ważne jest również, aby pracownicy organizacji byli świadomi zagrożeń i potrafili odpowiednio reagować w sytuacjach kryzysowych. Obejmuje to:
+            
+            Znajomość procedur awaryjnych.
+            Szybką identyfikację nietypowych sytuacji w systemie.
+            Współpracę z zespołem IT w celu zgłaszania podejrzanych aktywności.
+            
+		</article>
+	</body>
+	
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja Samochodu</title>
+</head>
+<body>
+    <h1>Rejestracja Samocodu</h1>
+    <form method="post" action="https://www.ade.acidcave.net/form_test.php" >
+    imie zglaszajacego: <input type="text" name="name" autofocus required> <br> <br>
+    nazwisko zglaszajacego: <input type="text" name="surname" autocomplete="off" required> <br> <br>
+    e-mail zglaszajacego: <input type="email" name="mail" required> <br> <br>
+    date_zgloszenia: <input type="date" name="when" required> <br> <br>
+    
+    jaka marka samochodu?
+                 <input list="Brand" name="brand"required>
+                 <datalist id="Brand">
+                    <option value="Toyota"> Toyota</option> 
+                    <option value="Ford"> Ford</option> 
+                    <option value="Opel"> Opel</option> 
+                    <option value="BMW"> BMW</option> 
+                 </datalist>   
+                     <br><br>
+kolor samochodu: <input type="color" name="color"> <br> <br>
+rok produkcji samochodu: <input type="number" min="1900" max="2100" name="year" required> <br> <br>
+   
+rodzaj samochodu: <br>
+    <input type="radio" name="type" value="o" id="1"> <label for="1"> samochod osobowy </label><br>
+    <input type="radio" name="type" value="c" id="2"> <label for="2"> samochod ciezarowy </label><br>
+    <input type="radio" name="type" value="a" id="3"> <label for="3"> autobus </label><br>
+   
+charakterystyczne cechy: <br><textarea name="description" rows="1" cols="50"></textarea> <br> <br>
+Jestem obywatelem Japoni: <input type="checkbox" name="citizen"> <br> <br>
+<input type="submit" value="Wyslij!">
+</body>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+</head>
+<body>
+    <h1>Rejestracja</h1>
+    80-266
+    <form method="post" action="" >
+  
+        imie: <input type="text" name="imie" autofocus required> <br> <br>
+        nazwisko: <input type="text" name="nazwisko" autocomplete="off" required> <br> <br>
+        e-mail: <input type="email" name="mail" required> <br> <br>
+        date_urodzenia: <input type="date" name="data_ur"> <br> <br>
+        wzrost: <input type="number" min="150" max="340" name="wzrost"> <br> <br>
+        masa: <input type="weight" min="50" max="600" name="masa"> <br> <br>
+        wiek: <input type="number" name="wiek"> <br> <br>
+        kod pocztowt: <input type="text" id="Abel" name="kod pocztowy" pattern="[0-9]{2}-[0-9]{3}" > <br> <br>
+        telefon: <input type="tel" id="realme" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"> <br> <br>
+        kolor oczu: <input type="color" name="kolor"> <br> <br>
+        jak sie czujesz: zle <input type="range" name="nastroj" min="1" max="100"> dobrze <br> <br>
+        cos o sobie: <textarea name="o_sobie" rows="4" cols="50"></textarea> <br> <br>
+    <fieldset style="width:300px">
+        <legend>plec: </legend><br> 
+        <input type="radio" name="plec" value="K" id="K"> <label for="K"> Kobieta </label><br>
+        <input type="radio" name="plec" value="M" id="M"> <label for="M"> Meszczyzna </label><br>
+        <input type="radio" name="plec" value="N" id="N"> <label for="N"> niebinarna </label><br>
+        <input type="radio" name="plec" value="I" id="I"> <label for="I"> inna/ nie chce podac </label><br>
+    </fieldset>
+        <br>
+          razmiar ubrania: 
+          <select name="rozmiar">
+             <option value="XS">Bardzo Maly</option>
+             <option value="S"> Maly</option>
+             <option value="M">sredni</option>
+             <option value="L">duzy</option>
+             <option value="XL">Bardzo duzy</option>
+             <option value="XXL">Ogromny</option>
+          </select> <br> <br>
+
+          Wyslij plik z cv:
+          <input type="file" name="wybierz plik"><br><br>
+
+          nie zgadzam sie na regulamin: <input type="checkbox" name="nie zgoda"> <br> <br>
+
+          <input type="hidden" name="kod prawdy" value="XYZ1024"><br><br>
+
+          jakie znasz jezyki programowania:
+          <select name="jezyki" size="5" multiple>
+            <option value="java"> java</option>
+            <option value="python"> python</option>
+            <option value="cpp"> cpp</option>
+            <option value="php"> php</option>
+            <option value="javascript"> javascript</option>
+            <option value="Brainfuck"> Brainfuck</option>
+          </select>
+          <br><br>
+
+          jakie kraje zwiedzilas/es
+          <select name="kraje" size="12" multiple>
+              <optgroup label="europejskie" >
+            <option value="Niemcy"> Niemcy</option> 
+            <option value="Francja"> Francja</option>
+            <option value="Cypr"> Cypr</option>
+              </optgroup>
+              
+              <optgroup label="Arabskie" > 
+                <option value="Nigeria"> Nigeria</option> 
+                <option value="Kenia"> Kenia</option>
+                <option value="Egipt"> Egipt</option>
+                  </optgroup>
+                  
+                  <optgroup label="Azjatyckie" > 
+                    <option value="Chiny"> Chiny</option> 
+                    <option value="Tajlandia"> Tajlandia</option>
+                    <option value="Korea-Polnocna"> Korea-Polnocna</option>
+                      </optgroup>
+                    </select>
+                      <br><br>
+
+                      pole nieaktywne - NIP
+                      <input type="text" name="nip" value="00000" disabled>
+                      <br><br>
+                     
+                 jakie masz zwierzatko domowe?
+                 <input list="lista zwierzat">
+                 <datalist id="lista zwierzat">
+                    <option value="myszka"> myszka</option> 
+                    <option value="chomik"> chomik</option> 
+                    <option value="szczurek"> szczurek</option> 
+                    <option value="panda"> panda</option> 
+                 </datalist>   
+                     <br><br>
+
+          <input disabled type="button" name="przycisk" value="nie wciskaj mnie prosze" onclick=""><br><br>
+
+            <button>lubiany przycisk</button><br><br>
+
+        <input type="submit" value="Wyslij to nie oszustwo!!!">
+        <input type="reset" value="resetuj tylko nie to???">
+    </form>
+    
+</body>
+</html>

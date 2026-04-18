@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMO-RPG</title>
+</head>
+<body>
+    <h1>Generator postaci MMO-RPG</h1>
+    <form method="post" action="zadanie.php" ></form>
+    nick: <input type="text" name="nick"> <br> <br>
+    
+    <label for="password">haslo:</label>
+    <input type="password" id="password" name="password"><br><br>
+    
+        rasa: <br>
+    <input type="radio" name="rasa" value="K" id="K"> <label for="K"> minotaur </label><br>
+        <input type="radio" name="rasa" value="M" id="M"> <label for="M"> ork </label><br>
+        <input type="radio" name="rasa" value="N" id="N"> <label for="N"> elf </label><br>
+        <input type="radio" name="rasa" value="I" id="I"> <label for="I"> goblin </label><br>
+        <input type="radio" name="rasa" value="J" id="J"> <label for="I"> krasnolud </label><br>
+        <input type="radio" name="rasa" value="Y" id="Y"> <label for="I"> ludzie </label><br>
+    
+<br><br>
+    class: 
+          <select name="class">
+             <option value="1">Mage</option>
+             <option value="2">Archer</option>
+             <option value="3">Knight</option>
+             <option value="4">Priest</option>
+             <option value="5">Paladin</option>
+             <option value="6">Assassin</option>
+             <option value="7">Necromancer</option>
+          </select> <br> <br>
+
+          skin: <input type="color" name="kolor"> <br> <br>
+          date: <input type="date" name="data_ur"> <br> <br>
+          
+          zgadzam sie z tym prawdziwym a zarazem nie prawdziwym regulaminem: <input type="checkbox" name="akceptuje" value="tak"> <br> <br>
+          <input type="submit" name="wyslij!" value="wyslij">
+</body>
+</html>

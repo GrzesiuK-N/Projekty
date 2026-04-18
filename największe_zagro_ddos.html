@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<title> co sprawia najwięcej problemów </title>
+		<link rel="stylesheet" href="ddos.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+        <h1>zwracaj uwagę w szgólności na:</h1>
+		<article>
+			<img src="zagrozenie.jpg">1. Zrozumienie charakterystyki ataku DDoS<br>
+            a._ Cel ataku: Zablokowanie dostępu do zasobów, np. strony internetowej, aplikacji, sieci.
+            1.1._ Rodzaje ataków:<br>
+            a._ Ataki wolumetryczne: Przeciążenie pasma sieciowego dużą ilością ruchu (np. UDP flood, ICMP flood).
+            b._ Ataki aplikacyjne: Celowanie w warstwę aplikacyjną, np. HTTP GET/POST flood.
+            c._ Ataki protokołowe: Wykorzystywanie luk w protokołach, np. SYN flood, Ping of Death.
+            d._ Źródła ataku: Botnety, zainfekowane urządzenia IoT, proxy.
+            <br><br>
+            2. Monitorowanie i wykrywanie ruchu<br>
+            a._ Anomalia w ruchu: Nagłe wzrosty obciążenia, nietypowe wzorce ruchu.
+            2.1._ Użycie narzędzi monitorujących:
+            a._ Systemy SIEM (Security Information and Event Management).
+            b._ Analiza ruchu w czasie rzeczywistym (np. Zabbix, Nagios).
+            c._ Znaczenie logów: Regularna analiza logów sieciowych i serwerowych w celu wykrycia podejrzanych zachowań.
+            <br><br>
+            3. Przygotowanie infrastruktury<br>
+            a._ Zapory sieciowe (firewalle):
+            b._ Konfiguracja firewalla do blokowania niechcianego ruchu.
+            c._ Wdrożenie Web Application Firewall (WAF).
+            3.1._ Rozwiązania chmurowe:
+            a._ Wykorzystanie usług ochrony DDoS oferowanych przez dostawców chmurowych (np. AWS Shield, Google Cloud Armor).
+            3.2._ Sieci Content Delivery Network (CDN):
+            a._ Redukcja obciążenia poprzez dystrybucję ruchu na serwery CDN.
+            3.3._ Load balancery:
+            a._ Rozdzielanie ruchu na różne serwery w celu uniknięcia przeciążenia jednego zasobu.
+            <br><br>
+            4. Zabezpieczenie warstwy aplikacyjnej<br>
+            a._ Walidacja żądań:
+            b._ Blokowanie podejrzanych lub nietypowych żądań.
+            c._ CAPTCHA: Ograniczenie liczby automatycznych żądań.
+            d._ Limitowanie szybkości ruchu (Rate Limiting): Ograniczenie liczby żądań z jednego adresu IP.
+            <br><br>
+            5. Zabezpieczenie sieci<br>
+            a._ Filtrowanie ruchu:
+            b._ Odrzucanie pakietów spoza zaufanych lokalizacji geograficznych (geoblokada).
+            c._ Blackhole routing – przekierowanie ruchu atakującego na „czarną dziurę”.
+            5.1._ Anycast:
+            a._ Rozproszenie ruchu w wielu lokalizacjach sieciowych.
+            5.2._ Implementacja zasad ACL (Access Control List):
+            a._ Blokowanie określonych adresów IP lub zakresów.
+            <br><br>
+            6. Reakcja na atak<br>
+            a._ Plan reagowania na incydenty:
+            b._ Opracowanie procedur na wypadek ataku DDoS.
+            c._ Wyznaczenie zespołu odpowiedzialnego za reakcję.
+            6.1._ Współpraca z dostawcami usług internetowych (ISP):
+            a._ Powiadomienie ISP o ataku i ewentualna prośba o filtrowanie ruchu.
+            6.2._ Redukcja obciążenia:
+            a._ Tymczasowe ograniczenie funkcjonalności aplikacji do kluczowych usług.
+            <br><br>
+            7. Edukacja i testy<br>
+            a._ Edukacja personelu:
+            b._ Szkolenie zespołów IT w zakresie najlepszych praktyk bezpieczeństwa.
+            7.1._ Testy penetracyjne:
+            a._ Symulowanie ataków DDoS, aby ocenić odporność infrastruktury.
+            7.2._ Audyt infrastruktury:
+            a._ Regularna weryfikacja zabezpieczeń.
+            <br><br>
+            8. Korzystanie z usług anty-DDoS<br>
+            a._ Dedykowane rozwiązania do ochrony przed DDoS:
+            b._ Cloudflare, Akamai, Imperva, Radware.
+            8.1._ Automatyczne wykrywanie i blokowanie:
+            a._ Algorytmy AI i machine learning do identyfikacji podejrzanego ruchu.
+            <br><br>
+            9. Zarządzanie ryzykiem
+            a._ Backup danych:
+            b._ Regularne tworzenie kopii zapasowych.
+            9.1._ Ubezpieczenie cybernetyczne:
+            a._ Polisy pokrywające straty wynikające z ataku DDoS.
+            9.2._ Polityka bezpieczeństwa:
+            a._ Definiowanie zasad postępowania w przypadku ataku.
+		</article>
+	</body>
+	
+</html>

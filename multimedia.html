@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    
+    <audio controls loop autoplay muted>
+        <source src="Poranek.ogg" type="audio/ogg"> <br> <br>  
+        <source src="Poranek.mp3" type="audio/mpeg"> <br> <br> <br> <br> <br> <br>
+    </audio>
+
+        <br> <br>
+
+       <video controls loop autoplay muted>
+         <source src="ziemia.mov" type="video/mov">
+         <source src="ziemia.mp4" type="video/mp4">
+       </video>
+
+       <br> <br>
+         
+       <canvas id="plotno" width="300" height="150" style="border: 1px solid lime"></canvas>
+       <script>
+           p = document.getElementById("plotno");
+           x = p.getContext('2d');
+           x.moveTo(0,0);
+           x.lineTo(125,75);
+           x.strokeStyle = "lightblue";
+           x.stroke();
+       </script>
+
+       <iframe width="600" height="300" src="https://2048game.com/pl/"></iframe>
+       <iframe width="1200" height="600" src="https://tetris.com/play-tetris"></iframe>
+
+</body>
+</html>
