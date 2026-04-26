@@ -1,0 +1,5 @@
+CREATE TABLE uzytkownicy (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    login VARCHAR(100),
+    haslo VARCHAR(255)
+);

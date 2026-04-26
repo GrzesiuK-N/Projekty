@@ -1,0 +1,15 @@
+-- zad.1
+
+SELECT DISTINCT Uczniowie.imie, Uczniowie.nazwisko FROM Uczniowie JOIN Wejscia ON Uczniowie.id_ucznia = Wejscia.id_ucznia WHERE Wejscia.data = '2022-04-08' AND Wejscia.rodzaj = 'wejscie'
+
+-- zad.2
+
+SELECT id_ucznia, DAY(data) AS Dzien FROM Wejscia WHERE rodzaj = 'wejscie'
+
+-- zad.3
+
+SELECT data, COUNT(id_ucznia) AS Liczba_operacji FROM Wejscia GROUP BY data
+
+-- zad.4
+
+SELECT Uczniowie.imie, Klasy.profil, Wejscia.data, Wejscia.godzina FROM Uczniowie JOIN Klasy ON Uczniowie.id_klasy = Klasy.id_klasy JOIN Wejscia ON Uczniowie.id_ucznia = Wejscia.id_ucznia WHERE Uczniowie.id_klasy LIKE '3%' AND Wejscia.rodzaj = 'wejscie'

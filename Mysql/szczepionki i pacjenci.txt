@@ -1,0 +1,16 @@
+-- zad.1
+
+SELECT COUNT(DISTINCT pesel) AS liczba_pacjentow FROM wizyty WHERE pesel LIKE '7%' OR pesel LIKE '8%' OR pesel LIKE '9%';
+
+-- zad.2
+
+SELECT w.kod_szczepionki, w.data_szczepienia, s.liczba_dawek FROM wizyty w JOIN szczepionki s ON w.kod_szczepionki = s.kod_szczepionki;
+
+-- zad.3
+
+SELECT COUNT(*) AS liczba_szczepien FROM wizyty WHERE kod_szczepionki IN ('sz13_5d', 'sz11_1d') AND data_szczepienia BETWEEN '2023-03-01' AND '2023-03-31';
+
+-- zad.4
+
+SELECT kod_szczepionki, COUNT(*) AS liczba_uzyc FROM wizyty GROUP BY kod_szczepionki ORDER BY liczba_uzyc DESC;
+

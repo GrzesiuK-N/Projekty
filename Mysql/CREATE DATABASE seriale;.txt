@@ -1,0 +1,10 @@
+CREATE DATABASE seriale;
+USE seriale;
+
+CREATE TABLE lista (
+    id_serialu INT AUTO_INCREMENT PRIMARY KEY,
+    tytul VARCHAR(200) NOT NULL,
+    opis TEXT NOT NULL,
+    ocena INT NOT NULL,
+    rok_stworzenia INT NOT NULL
+);
