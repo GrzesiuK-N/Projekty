@@ -1,0 +1,21 @@
+-- VARBINARY(MAX)
+
+
+CREATE TABLE Obrazy (
+    ID INT PRIMARY KEY,
+    NazwaPliku VARCHAR(255),
+    DaneObrazu LONGBLOB 
+);
+
+INSERT INTO Produkty (ProduktID, NazwaProduktu, SciezkaZdjecia)
+VALUES 
+(1, 'counter-strike2', 'C:\images\eco_1.jpg'),
+(2, 'counter-strike2', 'C:\images\eco_2.jpg'),
+(3, 'counter-strike2', 'C:\images\eco_3.jpg'),
+(4, 'counter-strike2', 'C:\images\ecoPlus_4.jpg'),
+(5, 'counter-strike2', 'C:\images\ecoPlus_4.jpg'),
+(6, 'counter-strike2', 'C:\images\ecoPlus_5.jpg'),
+(7, 'counter-strike2', 'C:\images\ecoPlus_5.jpg'),
+(8, 'counter-strike2', 'C:\images\ecoPlus_5.jpg'),
+(9, 'counter-strike2', 'C:\images\ecoPlus_6.jpg'),
+(10, 'counter-strike2', 'C:\images\ecoPlus_6.jpg');

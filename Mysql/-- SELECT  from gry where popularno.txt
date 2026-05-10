@@ -1,0 +1,11 @@
+-- cz.1/20
+
+-- SELECT * from gry where popularnosc <= 81 order by nazwa ASC 
+
+-- cz.2/20
+
+-- select tytul from poradniki where id >= 11 GROUP by nazwa order by tresc DESC
+
+-- cz.3/20
+
+-- 
